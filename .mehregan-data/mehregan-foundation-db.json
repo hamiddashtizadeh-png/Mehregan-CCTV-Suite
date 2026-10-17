@@ -1,0 +1,3992 @@
+{
+  "activeSessionUserId": 1,
+  "settings": {
+    "companyName": "فروشگاه دوربین مداربسته و سیستم‌های امنیتی مهرگان",
+    "economicCode": "411-8920-3314",
+    "nationalId": "14009871230",
+    "phone": "021-66748920",
+    "addressFa": "تهران، خیابان جمهوری، تقاطع حافظ، مجتمع تجاری تخصصی مهرگان، طبقه ۲",
+    "baseCurrencyCode": "IRR",
+    "displayCurrencyCode": "IRT",
+    "inventoryCostingMethod": "SPECIFIC_OR_FIFO",
+    "landedCostAllocationDefault": "BY_VALUE",
+    "activeFiscalYearCode": "1405",
+    "allowNegativeInventory": false,
+    "documentNumbering": {
+      "salesInvoicePrefix": "INV-1405-",
+      "salesProformaPrefix": "SQO-1405-",
+      "purchaseInvoicePrefix": "PI-1405-",
+      "purchaseProformaPrefix": "PO-1405-",
+      "treasuryReceiptPrefix": "REC-1405-",
+      "treasuryPaymentPrefix": "PAY-1405-",
+      "accountingDocPrefix": "DOC-1405-",
+      "projectPrefix": "PRJ-1405-",
+      "installationPrefix": "INS-1405-",
+      "expensePrefix": "EXP-1405-",
+      "incomePrefix": "INC-1405-"
+    },
+    "defaultWarehouseId": 1,
+    "defaultCashBoxId": 1,
+    "defaultBankAccountId": 1,
+    "receiptFooterMessageFa": "از خرید شما سپاسگزاریم. کلیه تجهیزات دارای ۲۴ ماه گارانتی طلایی شرکت مهرگان می‌باشند.",
+    "updatedAt": "2026-10-15T08:18:53.072Z"
+  },
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "fullName": "مدیر ارشد و مالک سیستم مهرگان",
+      "jobTitle": "راهبر کل سیستم",
+      "email": null,
+      "passwordHash": "2ec35a1b76d5803c4ea689faaf0fe66bc05848acd8106593145e02820d7c2e09",
+      "passwordSalt": "2cb465ed2282629d073e1df8a6f1d9d4",
+      "status": "ACTIVE",
+      "isInitialAdmin": true,
+      "isDemo": false,
+      "lastLoginAt": "2026-10-15T08:18:53.072Z",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "username": "sara_accountant",
+      "fullName": "سارا رضایی",
+      "jobTitle": "سرپرست حسابداری",
+      "email": null,
+      "passwordHash": "35391c03826b94f2dda07b5f035675972c88774384242ae9cfa7edb06929338f",
+      "passwordSalt": "1d39154d0e580f083ed9171ab1e13b06",
+      "status": "ACTIVE",
+      "isInitialAdmin": false,
+      "isDemo": false,
+      "lastLoginAt": "2026-10-15T08:18:53.072Z",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 3,
+      "username": "audit_user",
+      "fullName": "امیر حسینی",
+      "jobTitle": "ناظر و حسابرس امنیتی",
+      "email": null,
+      "passwordHash": "635c081f7259706329898f4c71815927f3ca367e0fa53b36c4924a8d466df895",
+      "passwordSalt": "f0c58dd801c18a30d8bdeda81e5abe72",
+      "status": "ACTIVE",
+      "isInitialAdmin": false,
+      "isDemo": false,
+      "lastLoginAt": "2026-10-15T08:18:53.072Z",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "roles": [
+    {
+      "code": "OWNER",
+      "titleFa": "مالک و راهبر کل سیستم (Owner)",
+      "descriptionFa": "دسترسی کامل ثبت‌شده در جدول role_permissions دیتابیس بدون دورزدن کنترل دسترسی در کد",
+      "isSystemRole": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "code": "CHIEF_ACCOUNTANT",
+      "titleFa": "سرپرست حسابداری و مالی",
+      "descriptionFa": "مدیریت تنظیمات مالی، نرخ‌های ارز، ممیزی اسناد و گزارش‌های کنترلی",
+      "isSystemRole": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "code": "WAREHOUSE_KEEPER",
+      "titleFa": "مسئول انبار و تجهیزات دوربین مداربسته",
+      "descriptionFa": "دسترسی به بخش‌های لجستیک و رهگیری اقلام با رعایت محدودیت‌های امنیتی",
+      "isSystemRole": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "code": "AUDITOR",
+      "titleFa": "حسابرس و ناظر امنیتی سیستم",
+      "descriptionFa": "دسترسی فقط‌خواندنی به لاگ‌های تغییرناپذیر، تاریخچه تغییرات و ممیزی سیستم",
+      "isSystemRole": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "permissions": [
+    {
+      "code": "foundation.users.manage",
+      "moduleNumber": 1,
+      "moduleNameFa": "Foundation و مدیریت سیستم",
+      "titleFa": "مدیریت کاربران و کلمه عبور",
+      "descriptionFa": "تعریف کاربر جدید، ویرایش اطلاعات، فعال‌سازی/تعلیق و بازنشانی رمز عبور",
+      "isCritical": true
+    },
+    {
+      "code": "foundation.roles.manage",
+      "moduleNumber": 1,
+      "moduleNameFa": "Foundation و مدیریت سیستم",
+      "titleFa": "مدیریت نقش‌ها و تخصیص به کاربران",
+      "descriptionFa": "ایجاد و ویرایش نقش‌های سازمانی و تخصیص نقش به کاربران دیتابیس",
+      "isCritical": true
+    },
+    {
+      "code": "foundation.rbac.manage",
+      "moduleNumber": 1,
+      "moduleNameFa": "Foundation و مدیریت سیستم",
+      "titleFa": "مدیریت مجوزها و استثناهای دسترسی (Override)",
+      "descriptionFa": "تخصیص مجوز به نقش‌ها و اعمال استثناهای صریح (Explicit Grant / Deny) به کاربران",
+      "isCritical": true
+    },
+    {
+      "code": "foundation.settings.manage",
+      "moduleNumber": 1,
+      "moduleNameFa": "Foundation و مدیریت سیستم",
+      "titleFa": "ویرایش مشخصات پایه فروشگاه و پیکربندی سیستم",
+      "descriptionFa": "تغییر نام کسب‌وکار، کدهای اقتصادی، تلفن، آدرس و ارزهای پیش‌فرض",
+      "isCritical": true
+    },
+    {
+      "code": "foundation.audit.read",
+      "moduleNumber": 1,
+      "moduleNameFa": "Foundation و مدیریت سیستم",
+      "titleFa": "مشاهده و جستجوی لاگ‌های امنیتی (Audit Log)",
+      "descriptionFa": "مشاهده رویدادهای ورود، تغییرات مجوز، دسترسی‌های غیرمجاز و عملیات سیستمی",
+      "isCritical": false
+    },
+    {
+      "code": "foundation.migrations.execute",
+      "moduleNumber": 1,
+      "moduleNameFa": "Foundation و مدیریت سیستم",
+      "titleFa": "بررسی و اجرای Migrationهای دیتابیس",
+      "descriptionFa": "اعمال اسکریپت‌های نسخه‌بندی‌شده غیرمخرب بر ساختار دیتابیس PostgreSQL",
+      "isCritical": true
+    },
+    {
+      "code": "foundation.connection.manage",
+      "moduleNumber": 1,
+      "moduleNameFa": "Foundation و مدیریت سیستم",
+      "titleFa": "مدیریت اتصال و تغییر دیتابیس (Local/LAN/Online)",
+      "descriptionFa": "آزمایش اتصال، تغییر مقصد دیتابیس، تایید صریح و بازگشت به تنظیمات قبلی",
+      "isCritical": true
+    },
+    {
+      "code": "foundation.currency.manage",
+      "moduleNumber": 1,
+      "moduleNameFa": "Foundation و مدیریت سیستم",
+      "titleFa": "مدیریت ارزها و ثبت نرخ‌های روز",
+      "descriptionFa": "ثبت نرخ‌های برابری ریال، تومان، دلار، یوان و درهم با رعایت محافظت Idempotency",
+      "isCritical": false
+    },
+    {
+      "code": "parties.view",
+      "moduleNumber": 3,
+      "moduleNameFa": "اشخاص و طرف‌های تجاری",
+      "titleFa": "مشاهده اطلاعات و پرونده اشخاص",
+      "descriptionFa": "مشاهده فهرست مشتریان، تأمین‌کنندگان، نصابان، سوابق تراکنش‌ها و پرونده مالی",
+      "isCritical": false
+    },
+    {
+      "code": "parties.create",
+      "moduleNumber": 3,
+      "moduleNameFa": "اشخاص و طرف‌های تجاری",
+      "titleFa": "ایجاد و تعریف شخص جدید",
+      "descriptionFa": "ثبت مشتری، تأمین‌کننده، نصاب یا همکار جدید با کنترل هوشمند اشخاص تکراری",
+      "isCritical": false
+    },
+    {
+      "code": "parties.edit",
+      "moduleNumber": 3,
+      "moduleNameFa": "اشخاص و طرف‌های تجاری",
+      "titleFa": "ویرایش اطلاعات و تغییر وضعیت شخص",
+      "descriptionFa": "ویرایش نشانی، شماره تماس، سقف اعتبار و تغییر وضعیت فعال/غیرفعال شخص",
+      "isCritical": false
+    },
+    {
+      "code": "parties.delete",
+      "moduleNumber": 3,
+      "moduleNameFa": "اشخاص و طرف‌های تجاری",
+      "titleFa": "حذف یا غیرفعال‌سازی دائم طرف تجاری",
+      "descriptionFa": "حذف شخص در صورت عدم وجود گردش مالی یا بایگانی دائم حساب با لاگ امنیتی",
+      "isCritical": true
+    },
+    {
+      "code": "inventory.view",
+      "moduleNumber": 4,
+      "moduleNameFa": "انبارداری و مدیریت کالاها",
+      "titleFa": "مشاهده موجودی، کالاها و انبارها",
+      "descriptionFa": "مشاهده فهرست کالاها، برندها، مدل‌ها، موجودی لحظه‌ای انبارها و رهگیری سریال/MAC",
+      "isCritical": false
+    },
+    {
+      "code": "inventory.items.manage",
+      "moduleNumber": 4,
+      "moduleNameFa": "انبارداری و مدیریت کالاها",
+      "titleFa": "تعریف و ویرایش کالا، برند و مشخصات فنی",
+      "descriptionFa": "تعریف کالای جدید، ثبت بارکد، مدل، مشخصات فنی و تغییر وضعیت فعال/غیرفعال کالاها",
+      "isCritical": false
+    },
+    {
+      "code": "inventory.documents.create",
+      "moduleNumber": 4,
+      "moduleNameFa": "انبارداری و مدیریت کالاها",
+      "titleFa": "ثبت اسناد انبار (ورود، خروج، انتقال، برگشتی)",
+      "descriptionFa": "صدور رسید خرید، حواله خروج فروش، انتقال بین انبارها و ورود سریال‌ها و MAC",
+      "isCritical": false
+    },
+    {
+      "code": "inventory.kardex.view",
+      "moduleNumber": 4,
+      "moduleNameFa": "انبارداری و مدیریت کالاها",
+      "titleFa": "مشاهده کاردکس و گردش واقعی کالا",
+      "descriptionFa": "دسترسی به گزارش رسمی کاردکس ریالی و مقداری کالا بر اساس اسناد قطعی ثبت‌شده",
+      "isCritical": false
+    },
+    {
+      "code": "inventory.negative_stock.override",
+      "moduleNumber": 4,
+      "moduleNameFa": "انبارداری و مدیریت کالاها",
+      "titleFa": "مجوز استثنایی خروج با موجودی منفی",
+      "descriptionFa": "امکان دورزدن محدودیت مسدودکننده موجودی منفی در هنگام صدور حواله خروج یا انتقال",
+      "isCritical": true
+    },
+    {
+      "code": "purchases.view",
+      "moduleNumber": 5,
+      "moduleNameFa": "خرید و بهای تمام‌شده",
+      "titleFa": "مشاهده ماژول خرید، پیش‌فاکتورها و بهای تمام‌شده",
+      "descriptionFa": "دسترسی به فهرست پیش‌فاکتورها، فاکتورهای خرید، جدول تخصیص سربار و سوابق پرداخت",
+      "isCritical": false
+    },
+    {
+      "code": "purchases.proforma.manage",
+      "moduleNumber": 5,
+      "moduleNameFa": "خرید و بهای تمام‌شده",
+      "titleFa": "ثبت، تایید و تبدیل پیش‌فاکتور خرید",
+      "descriptionFa": "ایجاد پیش‌فاکتور، ثبت اقلام و ارز و تبدیل آن به فاکتور قطعی خرید",
+      "isCritical": false
+    },
+    {
+      "code": "purchases.invoice.create",
+      "moduleNumber": 5,
+      "moduleNameFa": "خرید و بهای تمام‌شده",
+      "titleFa": "ثبت و تایید فاکتور قطعی خرید و صدور رسید انبار",
+      "descriptionFa": "ثبت رسمی فاکتور خرید، ایجاد تعهد بدهی به تأمین‌کننده و صدور خودکار رسید ورود انبار",
+      "isCritical": true
+    },
+    {
+      "code": "purchases.landed_cost.manage",
+      "moduleNumber": 5,
+      "moduleNameFa": "خرید و بهای تمام‌شده",
+      "titleFa": "محاسبه و تخصیص هزینه‌های سربار بهای تمام‌شده (Landed Cost)",
+      "descriptionFa": "تخصیص هزینه‌های حمل، بیمه، گمرک، بسته‌بندی و مالیات به تفکیک ارزش یا تعداد",
+      "isCritical": false
+    },
+    {
+      "code": "purchases.payments.create",
+      "moduleNumber": 5,
+      "moduleNameFa": "خرید و بهای تمام‌شده",
+      "titleFa": "ثبت پرداخت وجه و تسویه بدهی فاکتور خرید",
+      "descriptionFa": "ثبت پرداخت حواله بانکی، چک، کارتخوان یا ساتنا و کاهش مانده بدهی تأمین‌کننده",
+      "isCritical": false
+    },
+    {
+      "code": "purchases.returns.create",
+      "moduleNumber": 5,
+      "moduleNameFa": "خرید و بهای تمام‌شده",
+      "titleFa": "ثبت برگشت از خرید به تأمین‌کننده",
+      "descriptionFa": "صدور حواله برگشت کالا از انبار، ثبت بستانکاری و به‌روزرسانی وضعیت سریال‌ها",
+      "isCritical": true
+    },
+    {
+      "code": "sales.view",
+      "moduleNumber": 6,
+      "moduleNameFa": "فروش، پیش‌فاکتور و فروش سریع",
+      "titleFa": "مشاهده ماژول فروش، فاکتورها، پیش‌فاکتورها و فروش سریع",
+      "descriptionFa": "دسترسی به فهرست فاکتورهای فروش، پیش‌فاکتورها، صندوق فروش سریع و سوابق دریافت وجه",
+      "isCritical": false
+    },
+    {
+      "code": "sales.proforma.manage",
+      "moduleNumber": 6,
+      "moduleNameFa": "فروش، پیش‌فاکتور و فروش سریع",
+      "titleFa": "ثبت و مدیریت پیش‌فاکتور فروش",
+      "descriptionFa": "صدور پیش‌فاکتور، ارسال برای مشتری و تبدیل یک‌مرحله‌ای به فاکتور قطعی",
+      "isCritical": false
+    },
+    {
+      "code": "sales.invoice.create",
+      "moduleNumber": 6,
+      "moduleNameFa": "فروش، پیش‌فاکتور و فروش سریع",
+      "titleFa": "ثبت فاکتور قطعی فروش و خروج کالا از انبار",
+      "descriptionFa": "صدور فاکتور فروش، ثبت بدهکار مشتری، محاسبه بهای تمام‌شده و خروج خودکار کالا/سریال از انبار",
+      "isCritical": true
+    },
+    {
+      "code": "sales.quick_pos.manage",
+      "moduleNumber": 6,
+      "moduleNameFa": "فروش، پیش‌فاکتور و فروش سریع",
+      "titleFa": "عملیات صندوق و فروش سریع (Quick POS Sale)",
+      "descriptionFa": "فروش آنی با بارکدخوان، تسویه نقدی/کارتخوان حضوری و چاپ مستقیم فیش خرید",
+      "isCritical": false
+    },
+    {
+      "code": "sales.receipts.create",
+      "moduleNumber": 6,
+      "moduleNameFa": "فروش، پیش‌فاکتور و فروش سریع",
+      "titleFa": "ثبت دریافت وجه و تسویه حساب مشتریان",
+      "descriptionFa": "ثبت فیش واریزی، تراکنش کارتخوان، چک یا نقد و کاهش مانده طلب از مشتری",
+      "isCritical": false
+    },
+    {
+      "code": "sales.returns.create",
+      "moduleNumber": 6,
+      "moduleNameFa": "فروش، پیش‌فاکتور و فروش سریع",
+      "titleFa": "ثبت برگشت از فروش و لغو فاکتور",
+      "descriptionFa": "مرجوعی کالا توسط مشتری، بازگشت سریال به انبار و تعدیل طلب/بدهی حساب مشتری",
+      "isCritical": true
+    },
+    {
+      "code": "installation.jobs.view",
+      "moduleNumber": 7,
+      "moduleNameFa": "خدمات نصب و راه‌اندازی",
+      "titleFa": "مشاهده پرونده‌ها و سفارشات خدمات نصب",
+      "descriptionFa": "دسترسی به فهرست سفارشات نصب، وضعیت پروژه‌ها و گزارش نصابان",
+      "isCritical": false
+    },
+    {
+      "code": "installation.jobs.manage",
+      "moduleNumber": 7,
+      "moduleNameFa": "خدمات نصب و راه‌اندازی",
+      "titleFa": "ثبت و مدیریت کامل خدمات نصب و تخصیص نصاب",
+      "descriptionFa": "صدور پرونده نصب، تعیین نصاب مسئول، ثبت اجرت و هزینه‌ها و تغییر وضعیت انجام کار",
+      "isCritical": true
+    },
+    {
+      "code": "treasury.view",
+      "moduleNumber": 8,
+      "moduleNameFa": "خزانه، صندوق و بانک",
+      "titleFa": "مشاهده اطلاعات خزانه، صندوق‌ها، حساب‌ها و چک‌ها",
+      "descriptionFa": "دسترسی به گردش وجوه، مانده صندوق‌ها، حساب‌های بانکی و وضعیت سررسید چک‌ها",
+      "isCritical": false
+    },
+    {
+      "code": "treasury.transactions.manage",
+      "moduleNumber": 8,
+      "moduleNameFa": "خزانه، صندوق و بانک",
+      "titleFa": "ثبت و مدیریت تراکنش‌های دریافت، پرداخت و انتقال وجه",
+      "descriptionFa": "ثبت دریافت و پرداخت نقد/حواله، انتقال بین حساب‌ها و تسویه اسناد",
+      "isCritical": true
+    },
+    {
+      "code": "treasury.cheques.manage",
+      "moduleNumber": 8,
+      "moduleNameFa": "خزانه، صندوق و بانک",
+      "titleFa": "مدیریت کامل چرخه حیات چک‌ها و سررسیدها",
+      "descriptionFa": "ثبت چک دریافتی/پرداختی، واگذاری به بانک، وصول قطعی و برگشت چک",
+      "isCritical": true
+    },
+    {
+      "code": "treasury.expenses.manage",
+      "moduleNumber": 8,
+      "moduleNameFa": "خزانه، صندوق و بانک",
+      "titleFa": "ثبت و پیگیری هزینه‌ها و درآمدهای عملیاتی",
+      "descriptionFa": "ثبت هزینه‌های جاری (اجاره، قبوض، حقوق) و درآمدهای متفرقه کسب‌وکار",
+      "isCritical": false
+    },
+    {
+      "code": "accounting.view",
+      "moduleNumber": 9,
+      "moduleNameFa": "حسابداری دوطرفه و دفاتر مالی",
+      "titleFa": "مشاهده اسناد و گزارش‌های حسابداری",
+      "descriptionFa": "دسترسی مشاهده اسناد حسابداری، تراز آزمایشی و دفاتر کل و روزنامه",
+      "isCritical": false
+    },
+    {
+      "code": "accounting.documents.manage",
+      "moduleNumber": 9,
+      "moduleNameFa": "حسابداری دوطرفه و دفاتر مالی",
+      "titleFa": "ایجاد و ویرایش اسناد حسابداری",
+      "descriptionFa": "ثبت سند حسابداری جدید با کنترل تراز بدهکار و بستانکار و اصلاح اسناد پیش‌نویس",
+      "isCritical": true
+    },
+    {
+      "code": "accounting.documents.approve",
+      "moduleNumber": 9,
+      "moduleNameFa": "حسابداری دوطرفه و دفاتر مالی",
+      "titleFa": "تایید اسناد حسابداری",
+      "descriptionFa": "تایید نهایی اسناد حسابداری و اعمال رسمی در دفاتر مالی",
+      "isCritical": true
+    },
+    {
+      "code": "accounting.documents.permanent",
+      "moduleNumber": 9,
+      "moduleNameFa": "حسابداری دوطرفه و دفاتر مالی",
+      "titleFa": "قطعی کردن اسناد حسابداری (قفل غیرقابل ویرایش)",
+      "descriptionFa": "قطعی‌سازی اسناد تایید شده و بستن امکان ویرایش یا حذف مستقیم",
+      "isCritical": true
+    },
+    {
+      "code": "accounting.reports.view",
+      "moduleNumber": 9,
+      "moduleNameFa": "حسابداری دوطرفه و دفاتر مالی",
+      "titleFa": "مشاهده گزارش‌های جامع دفتر روزنامه، دفتر کل و تراز آزمایشی",
+      "descriptionFa": "بررسی تراز ۲ ستونی و ۴ ستونی و گردش حساب‌های کل و معین",
+      "isCritical": false
+    },
+    {
+      "code": "accounting.chart.manage",
+      "moduleNumber": 9,
+      "moduleNameFa": "حسابداری دوطرفه و دفاتر مالی",
+      "titleFa": "مدیریت درختواره و کدینگ سرفصل‌های حسابداری",
+      "descriptionFa": "تعریف و ویرایش حساب‌های کل و معین و تعیین ماهیت بدهکار/بستانکار",
+      "isCritical": true
+    },
+    {
+      "code": "accounting.fiscal.manage",
+      "moduleNumber": 10,
+      "moduleNameFa": "سال و دوره مالی، مراکز هزینه و سودآوری",
+      "titleFa": "مدیریت سال‌ها و دوره‌های حسابداری",
+      "descriptionFa": "تعریف سال مالی جدید، باز کردن دوره‌های فصلی و ماهانه و کنترل تقویم مالی",
+      "isCritical": true
+    },
+    {
+      "code": "accounting.periods.close",
+      "moduleNumber": 10,
+      "moduleNameFa": "سال و دوره مالی، مراکز هزینه و سودآوری",
+      "titleFa": "بستن دوره‌های حسابداری و پایان سال مالی",
+      "descriptionFa": "بستن رسمی دوره، صدور سند بستن حساب‌های موقت و انتقال سود/زیان انباشته",
+      "isCritical": true
+    },
+    {
+      "code": "accounting.profitability.view",
+      "moduleNumber": 10,
+      "moduleNameFa": "سال و دوره مالی، مراکز هزینه و سودآوری",
+      "titleFa": "تحلیل چندبعدی سودآوری و صورت سود و زیان",
+      "descriptionFa": "مشاهده سود ناخالص و خالص بر اساس کالا، گروه کالا، مشتری، نصاب و پروژه",
+      "isCritical": false
+    },
+    {
+      "code": "costcenters.manage",
+      "moduleNumber": 10,
+      "moduleNameFa": "سال و دوره مالی، مراکز هزینه و سودآوری",
+      "titleFa": "مدیریت مراکز هزینه و بودجه‌بندی",
+      "descriptionFa": "تعریف و مدیریت مراکز هزینه و پایش هزینه‌های تخصیص‌یافته به واحدها",
+      "isCritical": false
+    },
+    {
+      "code": "projects.view",
+      "moduleNumber": 11,
+      "moduleNameFa": "پروژه‌ها، نصابان و مصرف کالا",
+      "titleFa": "مشاهده لیست پروژه‌ها و کارپوشه اجرایی",
+      "descriptionFa": "مشاهده پروژه‌ها، وضعیت پیشرفت و جزئیات اجرایی",
+      "isCritical": false
+    },
+    {
+      "code": "projects.manage",
+      "moduleNumber": 11,
+      "moduleNameFa": "پروژه‌ها، نصابان و مصرف کالا",
+      "titleFa": "تعریف و مدیریت پروژه‌ها و تخصیص نصاب",
+      "descriptionFa": "ثبت پروژه جدید، تغییر وضعیت، ویرایش مشخصات قرارداد و نصاب مسئول",
+      "isCritical": false
+    },
+    {
+      "code": "projects.requisitions.manage",
+      "moduleNumber": 11,
+      "moduleNameFa": "پروژه‌ها، نصابان و مصرف کالا",
+      "titleFa": "مدیریت درخواست و چرخه مصرف کالای پروژه",
+      "descriptionFa": "درخواست کالا، تأیید مدیر، تحویل انباردار، ثبت مصرف و برگشت مازاد کالا به انبار",
+      "isCritical": false
+    },
+    {
+      "code": "projects.profitability.view",
+      "moduleNumber": 11,
+      "moduleNameFa": "پروژه‌ها، نصابان و مصرف کالا",
+      "titleFa": "مشاهده گزارش سودآوری و بهای تمام‌شده پروژه",
+      "descriptionFa": "مشاهده تحلیل سود واقعی پروژه حاصل از درآمد، کالای مصرفی، اجرت نصاب و هزینه‌ها",
+      "isCritical": false
+    }
+  ],
+  "rolePermissions": [
+    {
+      "id": 1,
+      "roleCode": "OWNER",
+      "permissionCode": "foundation.users.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "roleCode": "OWNER",
+      "permissionCode": "foundation.roles.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 3,
+      "roleCode": "OWNER",
+      "permissionCode": "foundation.rbac.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 4,
+      "roleCode": "OWNER",
+      "permissionCode": "foundation.settings.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 5,
+      "roleCode": "OWNER",
+      "permissionCode": "foundation.audit.read",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 6,
+      "roleCode": "OWNER",
+      "permissionCode": "foundation.migrations.execute",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 7,
+      "roleCode": "OWNER",
+      "permissionCode": "foundation.connection.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 8,
+      "roleCode": "OWNER",
+      "permissionCode": "foundation.currency.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 9,
+      "roleCode": "OWNER",
+      "permissionCode": "parties.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 10,
+      "roleCode": "OWNER",
+      "permissionCode": "parties.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 11,
+      "roleCode": "OWNER",
+      "permissionCode": "parties.edit",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 12,
+      "roleCode": "OWNER",
+      "permissionCode": "parties.delete",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 13,
+      "roleCode": "OWNER",
+      "permissionCode": "inventory.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 14,
+      "roleCode": "OWNER",
+      "permissionCode": "inventory.items.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 15,
+      "roleCode": "OWNER",
+      "permissionCode": "inventory.documents.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 16,
+      "roleCode": "OWNER",
+      "permissionCode": "inventory.kardex.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 17,
+      "roleCode": "OWNER",
+      "permissionCode": "inventory.negative_stock.override",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 18,
+      "roleCode": "OWNER",
+      "permissionCode": "purchases.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 19,
+      "roleCode": "OWNER",
+      "permissionCode": "purchases.proforma.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 20,
+      "roleCode": "OWNER",
+      "permissionCode": "purchases.invoice.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 21,
+      "roleCode": "OWNER",
+      "permissionCode": "purchases.landed_cost.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 22,
+      "roleCode": "OWNER",
+      "permissionCode": "purchases.payments.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 23,
+      "roleCode": "OWNER",
+      "permissionCode": "purchases.returns.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 24,
+      "roleCode": "OWNER",
+      "permissionCode": "sales.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 25,
+      "roleCode": "OWNER",
+      "permissionCode": "sales.proforma.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 26,
+      "roleCode": "OWNER",
+      "permissionCode": "sales.invoice.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 27,
+      "roleCode": "OWNER",
+      "permissionCode": "sales.quick_pos.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 28,
+      "roleCode": "OWNER",
+      "permissionCode": "sales.receipts.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 29,
+      "roleCode": "OWNER",
+      "permissionCode": "sales.returns.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 30,
+      "roleCode": "OWNER",
+      "permissionCode": "installation.jobs.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 31,
+      "roleCode": "OWNER",
+      "permissionCode": "installation.jobs.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 32,
+      "roleCode": "OWNER",
+      "permissionCode": "treasury.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 33,
+      "roleCode": "OWNER",
+      "permissionCode": "treasury.transactions.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 34,
+      "roleCode": "OWNER",
+      "permissionCode": "treasury.cheques.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 35,
+      "roleCode": "OWNER",
+      "permissionCode": "treasury.expenses.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 36,
+      "roleCode": "OWNER",
+      "permissionCode": "accounting.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 37,
+      "roleCode": "OWNER",
+      "permissionCode": "accounting.documents.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 38,
+      "roleCode": "OWNER",
+      "permissionCode": "accounting.documents.approve",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 39,
+      "roleCode": "OWNER",
+      "permissionCode": "accounting.documents.permanent",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 40,
+      "roleCode": "OWNER",
+      "permissionCode": "accounting.reports.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 41,
+      "roleCode": "OWNER",
+      "permissionCode": "accounting.chart.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 42,
+      "roleCode": "OWNER",
+      "permissionCode": "accounting.fiscal.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 43,
+      "roleCode": "OWNER",
+      "permissionCode": "accounting.periods.close",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 44,
+      "roleCode": "OWNER",
+      "permissionCode": "accounting.profitability.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 45,
+      "roleCode": "OWNER",
+      "permissionCode": "costcenters.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 46,
+      "roleCode": "OWNER",
+      "permissionCode": "projects.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 47,
+      "roleCode": "OWNER",
+      "permissionCode": "projects.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 48,
+      "roleCode": "OWNER",
+      "permissionCode": "projects.requisitions.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 49,
+      "roleCode": "OWNER",
+      "permissionCode": "projects.profitability.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 50,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "foundation.audit.read",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 51,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "foundation.currency.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 52,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "foundation.settings.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 53,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "parties.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 54,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "parties.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 55,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "parties.edit",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 56,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "inventory.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 57,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "inventory.kardex.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 58,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "purchases.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 59,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "purchases.proforma.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 60,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "purchases.invoice.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 61,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "purchases.landed_cost.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 62,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "purchases.payments.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 63,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "purchases.returns.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 64,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "sales.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 65,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "sales.proforma.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 66,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "sales.invoice.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 67,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "sales.quick_pos.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 68,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "sales.receipts.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 69,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "sales.returns.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 70,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "installation.jobs.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 71,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "installation.jobs.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 72,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "treasury.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 73,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "treasury.transactions.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 74,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "treasury.cheques.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 75,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "permissionCode": "treasury.expenses.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 76,
+      "roleCode": "AUDITOR",
+      "permissionCode": "foundation.audit.read",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 77,
+      "roleCode": "AUDITOR",
+      "permissionCode": "parties.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 78,
+      "roleCode": "AUDITOR",
+      "permissionCode": "inventory.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 79,
+      "roleCode": "AUDITOR",
+      "permissionCode": "inventory.kardex.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 80,
+      "roleCode": "AUDITOR",
+      "permissionCode": "purchases.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 81,
+      "roleCode": "AUDITOR",
+      "permissionCode": "sales.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 82,
+      "roleCode": "WAREHOUSE_KEEPER",
+      "permissionCode": "parties.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 83,
+      "roleCode": "WAREHOUSE_KEEPER",
+      "permissionCode": "inventory.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 84,
+      "roleCode": "WAREHOUSE_KEEPER",
+      "permissionCode": "inventory.items.manage",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 85,
+      "roleCode": "WAREHOUSE_KEEPER",
+      "permissionCode": "inventory.documents.create",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 86,
+      "roleCode": "WAREHOUSE_KEEPER",
+      "permissionCode": "inventory.kardex.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 87,
+      "roleCode": "WAREHOUSE_KEEPER",
+      "permissionCode": "purchases.view",
+      "grantedBy": "SYSTEM_SEED",
+      "grantedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "userRoleAssignments": [
+    {
+      "id": 1,
+      "userId": 1,
+      "roleCode": "OWNER",
+      "assignedAt": "2026-10-15T08:18:53.072Z",
+      "assignedBy": "SYSTEM"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "roleCode": "CHIEF_ACCOUNTANT",
+      "assignedAt": "2026-10-15T08:18:53.072Z",
+      "assignedBy": "admin"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "roleCode": "AUDITOR",
+      "assignedAt": "2026-10-15T08:18:53.072Z",
+      "assignedBy": "admin"
+    }
+  ],
+  "userPermissionOverrides": [
+    {
+      "id": 1,
+      "userId": 2,
+      "permissionCode": "foundation.migrations.execute",
+      "effect": "ALLOW",
+      "reasonFa": "مجوز موردی نظارت بر به‌روزرسانی ساختار دیتابیس (Explicit Grant)",
+      "createdBy": "admin",
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "migrations": [
+    {
+      "version": "0001",
+      "name": "0001_foundation_core.sql",
+      "descriptionFa": "جداول پایه تنظیمات، ارزها، سال مالی و قواعد شماره‌گذاری اسناد",
+      "checksum": "sha256:8b4c201a91e0",
+      "isDestructive": false,
+      "status": "APPLIED",
+      "executionMs": 14,
+      "appliedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "version": "0002",
+      "name": "0002_rbac_and_audit.sql",
+      "descriptionFa": "احراز هویت داخلی دیتابیسی، کنترل دسترسی RBAC پویا و جدول لاگ‌های تغییرناپذیر",
+      "checksum": "sha256:4d77e19f302b",
+      "isDestructive": false,
+      "status": "APPLIED",
+      "executionMs": 18,
+      "appliedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "version": "0003",
+      "name": "0003_parties_module.sql",
+      "descriptionFa": "ماژول جامع اشخاص و طرف‌های تجاری (مشتری، تامین‌کننده، نصاب، سایر) و سوابق مرتبط",
+      "checksum": "sha256:7c91e4a3b012",
+      "isDestructive": false,
+      "status": "APPLIED",
+      "executionMs": 16,
+      "appliedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "version": "0004",
+      "name": "0004_inventory_and_kardex_module.sql",
+      "descriptionFa": "ماژول انبارداری، مشخصات فنی کالاها، رهگیری سریال/MAC و کاردکس گردش کالا",
+      "checksum": "sha256:5e19a4b2c019",
+      "isDestructive": false,
+      "status": "APPLIED",
+      "executionMs": 15,
+      "appliedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "version": "0005",
+      "name": "0005_purchases_and_landed_cost.sql",
+      "descriptionFa": "ماژول خرید، پیش‌فاکتور، ارزهای خارجی، تخصیص هزینه‌های سربار بهای تمام‌شده و بدهی تأمین‌کننده",
+      "checksum": "sha256:8f2a1b9c3021",
+      "isDestructive": false,
+      "status": "APPLIED",
+      "executionMs": 18,
+      "appliedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": 2,
+      "traceId": "TRC-333088-07D9",
+      "timestamp": "2026-10-15T08:18:53.089Z",
+      "actorUserId": 1,
+      "actorUsername": "admin",
+      "actorRoleSummary": "OWNER",
+      "action": "DATABASE_FACTORY_RESET",
+      "category": "SETTINGS",
+      "targetEntity": "database",
+      "targetId": "ROOT",
+      "status": "SUCCESS",
+      "detailsFa": "بازنشانی کامل دیتابیس به تنظیمات اولیّه کارخانه",
+      "sanitizedMetadata": {}
+    },
+    {
+      "id": 1,
+      "traceId": "TRC-1405-INIT-01",
+      "timestamp": "2026-10-15T08:18:53.072Z",
+      "actorUserId": 1,
+      "actorUsername": "admin",
+      "actorRoleSummary": "OWNER",
+      "action": "FOUNDATION_BOOTSTRAP_COMPLETE",
+      "category": "SECURITY",
+      "targetEntity": "system",
+      "targetId": "root",
+      "status": "SUCCESS",
+      "detailsFa": "راه‌اندازی اولیه ماژول Foundation با احراز هویت دیتابیسی (کاربر پیش‌فرض admin / admin) و موتور RBAC",
+      "sanitizedMetadata": {
+        "authStrategy": "INTERNAL_DATABASE_LOCAL",
+        "rbacPrecedenceRule": "EXPLICIT_DENY > EXPLICIT_GRANT > ROLE_PERMISSION > DEFAULT_DENY",
+        "ownerBypassDisabled": true
+      }
+    }
+  ],
+  "parties": [
+    {
+      "id": 1,
+      "partyCode": "PRT-10001",
+      "primaryType": "CUSTOMER",
+      "roles": [
+        "CUSTOMER"
+      ],
+      "personType": "LEGAL",
+      "fullName": "شرکت ساختمانی نگین البرز (پروژه برج آفتاب)",
+      "companyTitle": "نگین البرز",
+      "nationalId": "10103456789",
+      "economicCode": "411-5582-1002",
+      "registrationNumber": "382109",
+      "mobile": "09121112233",
+      "phone": "021-88992211",
+      "fax": "021-88992212",
+      "email": "info@negine-alborz.ir",
+      "province": "تهران",
+      "city": "تهران",
+      "postalCode": "1985713421",
+      "addressFa": "تهران، سعادت‌آباد، میدان کاج، خیابان نهم، پلاک ۲۴",
+      "status": "ACTIVE",
+      "creditLimitIrr": 15000000000,
+      "installerSkills": null,
+      "notes": "پروژه نظارت تصویری ۶۴ کانال دوربین مداربسته تحت شبکه IP برند Dahua با سوییچ‌های PoE",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "partyCode": "PRT-10002",
+      "primaryType": "SUPPLIER",
+      "roles": [
+        "SUPPLIER"
+      ],
+      "personType": "LEGAL",
+      "fullName": "شرکت بازرگانی فناوری پارس پویا (واردکننده رسمی Hikvision & Dahua)",
+      "companyTitle": "پارس پویا تکنولوژی",
+      "nationalId": "10320491823",
+      "economicCode": "411-9988-3344",
+      "registrationNumber": "491022",
+      "mobile": "09123334455",
+      "phone": "021-66708899",
+      "fax": "021-66708898",
+      "email": "sales@parspouya-cctv.com",
+      "province": "تهران",
+      "city": "تهران",
+      "postalCode": "1139745123",
+      "addressFa": "تهران، خیابان جمهوری، پاساژ امجد، طبقه ۴، واحد ۱۲",
+      "status": "ACTIVE",
+      "creditLimitIrr": 50000000000,
+      "installerSkills": null,
+      "notes": "تأمین‌کننده اصلی NVRهای ۳۲ کانال، دوربین‌های دید در شب ColorVu و هارد دیسک‌های نظارتی Purple",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 3,
+      "partyCode": "PRT-10003",
+      "primaryType": "INSTALLER",
+      "roles": [
+        "INSTALLER",
+        "CUSTOMER"
+      ],
+      "personType": "NATURAL",
+      "fullName": "مهندس علیرضا بهرامی (نصاب ارشد سیستم‌های نظارتی و حفاظتی)",
+      "companyTitle": "گروه فنی مهندسی بهرام‌تک",
+      "nationalId": "0078945612",
+      "economicCode": null,
+      "registrationNumber": null,
+      "mobile": "09125556677",
+      "phone": "021-44556677",
+      "fax": null,
+      "email": "a.bahrami.cctv@gmail.com",
+      "province": "تهران",
+      "city": "تهران",
+      "postalCode": "1453216789",
+      "addressFa": "تهران، ستارخان، خیابان خسرو شمالی، پلاک ۱۸",
+      "status": "ACTIVE",
+      "creditLimitIrr": 500000000,
+      "installerSkills": "تسلط بر کانفیگ سوییچ‌های سیسکو و PoE، فیوژن فیبر نوری، دوربین‌های PTZ اسپیددام Dahua و انتقال تصویر P2P",
+      "notes": "نصاب منتخب پروژه‌های صنعتی و سازمانی، عقد قرارداد به‌صورت درصدی و اجرایی",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 4,
+      "partyCode": "PRT-10004",
+      "primaryType": "PARTNER_OTHER",
+      "roles": [
+        "PARTNER_OTHER"
+      ],
+      "personType": "NATURAL",
+      "fullName": "دفتر فنی مهندسی صبا الکترونیک (همکار فروش و گارانتی دوربین)",
+      "companyTitle": "صبا الکترونیک البرز",
+      "nationalId": "0451239874",
+      "economicCode": null,
+      "registrationNumber": null,
+      "mobile": "09127778899",
+      "phone": "026-32219876",
+      "fax": null,
+      "email": "saba.electronics@info.ir",
+      "province": "البرز",
+      "city": "کرج",
+      "postalCode": "3145678912",
+      "addressFa": "کرج، میدان شهدا، برج بهار، طبقه ۳، واحد ۹",
+      "status": "ACTIVE",
+      "creditLimitIrr": 2000000000,
+      "installerSkills": "تعمیرات تخصصی بردهای دوربین، ارتقای فریمور NVR و رفع لوپ شبکه",
+      "notes": "نمایندگی خدمات پس از فروش و تعمیرات گارانتی",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 5,
+      "partyCode": "PRT-10005",
+      "primaryType": "SUPPLIER",
+      "roles": [
+        "SUPPLIER"
+      ],
+      "personType": "LEGAL",
+      "fullName": "شرکت ارتباطات امن پیشرو (تأمین‌کننده تجهیزات شبکه، رادیو و سوییچ‌های PoE)",
+      "companyTitle": "ارتباطات امن پیشرو",
+      "nationalId": "10108877665",
+      "economicCode": "411-2233-4455",
+      "registrationNumber": "512033",
+      "mobile": "09128889900",
+      "phone": "021-88776655",
+      "fax": "021-88776654",
+      "email": "info@pishro-network.ir",
+      "province": "تهران",
+      "city": "تهران",
+      "postalCode": "1589741235",
+      "addressFa": "تهران، خیابان مطهری، خیابان فجر، پلاک ۴۲",
+      "status": "ACTIVE",
+      "creditLimitIrr": 30000000000,
+      "installerSkills": null,
+      "notes": "تأمین‌کننده تخصصی سوییچ‌های PoE، کابل‌های شبکه لگراند و رادیوهای وایرلس پوینت‌تو‌پوینت",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 6,
+      "partyCode": "PRT-10000",
+      "primaryType": "CUSTOMER",
+      "roles": [
+        "CUSTOMER"
+      ],
+      "personType": "NATURAL",
+      "fullName": "خریدار عمومی / مشتری حضوری (صندوق فروش سریع)",
+      "companyTitle": "فروشگاه و صندوق حضوری",
+      "nationalId": "0000000000",
+      "economicCode": null,
+      "registrationNumber": null,
+      "mobile": "09000000000",
+      "phone": "021-66748920",
+      "fax": null,
+      "email": null,
+      "province": "تهران",
+      "city": "تهران",
+      "postalCode": "1111111111",
+      "addressFa": "مراجعه حضوری به فروشگاه و صندوق سریع مهرگان",
+      "status": "ACTIVE",
+      "creditLimitIrr": 0,
+      "installerSkills": null,
+      "notes": "مشتری عمومی و خریدار حضوری پیش‌فرض برای فروش‌های آنی صندوق (Quick POS Sale)",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "partyTransactions": [
+    {
+      "id": 1,
+      "partyId": 1,
+      "recordType": "SALE_INVOICE",
+      "referenceNumber": "INV-1405-1001",
+      "titleFa": "فاکتور فروش سیستم دوربین مداربسته ۶۴ کانال برج آفتاب",
+      "amountIrr": 1850000000,
+      "dateJalali": "1405/01/15",
+      "status": "COMPLETED",
+      "notesFa": "شامل ۳۲ عدد دوربین 4MP IP دام و بولت داهوا، دو دستگاه NVR 32CH، ۴ عدد سوییچ ۱۶ پورت PoE",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "partyId": 1,
+      "recordType": "RECEIPT",
+      "referenceNumber": "REC-1405-1001",
+      "titleFa": "پیش‌دریافت چک صیادی بانک ملت (مرحله اول)",
+      "amountIrr": 1000000000,
+      "dateJalali": "1405/01/16",
+      "status": "SETTLED",
+      "notesFa": "شناسه صیاد: ۱۲۳۴۵۶۷۸۹۰۱۲۳۴۵۶ - پاس شده در سررسید",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 3,
+      "partyId": 1,
+      "recordType": "CCTV_PROJECT",
+      "referenceNumber": "PRJ-1405-01",
+      "titleFa": "پروژه پایش تصویری و اتاق مانیتورینگ برج مسکونی آفتاب",
+      "amountIrr": 1850000000,
+      "dateJalali": "1405/01/10",
+      "status": "IN_PROGRESS",
+      "notesFa": "نصاب مسئول: مهندس بهرامی، پیشرفت فیزیکی ۶۵٪",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 4,
+      "partyId": 2,
+      "recordType": "PURCHASE_INVOICE",
+      "referenceNumber": "PUR-1405-2001",
+      "titleFa": "فاکتور خرید تجهیزات مداربسته از شرکت پارس پویا",
+      "amountIrr": 4200000000,
+      "dateJalali": "1405/01/08",
+      "status": "COMPLETED",
+      "notesFa": "واردات مستقیم دوربین‌های هایک‌ویژن سری ColorVu و هارد ۶ ترابایت بنفش",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 5,
+      "partyId": 2,
+      "recordType": "PAYMENT",
+      "referenceNumber": "PAY-1405-2001",
+      "titleFa": "حواله ساتنا مرحله اول به حساب پارس پویا",
+      "amountIrr": 2500000000,
+      "dateJalali": "1405/01/10",
+      "status": "SETTLED",
+      "notesFa": "شماره پیگیری ساتنا: ۹۸۲۳۰۴۸۹۲۰۱",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 6,
+      "partyId": 3,
+      "recordType": "CCTV_PROJECT",
+      "referenceNumber": "PRJ-1405-01",
+      "titleFa": "قرارداد اجرای کابل‌کشی و راه‌اندازی ۶۴ دوربین برج آفتاب",
+      "amountIrr": 150000000,
+      "dateJalali": "1405/01/12",
+      "status": "IN_PROGRESS",
+      "notesFa": "دستمزد اجرای پروژه به ازای هر نقطه شبکه و نصب سوییچ",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 7,
+      "partyId": 3,
+      "recordType": "PAYMENT",
+      "referenceNumber": "PAY-1405-3001",
+      "titleFa": "پرداخت علی‌الحساب دستمزد نصاب فاز یک",
+      "amountIrr": 100000000,
+      "dateJalali": "1405/01/20",
+      "status": "SETTLED",
+      "notesFa": "واریز به شماره شبا بانک ملی نصاب",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "itemCategories": [
+    {
+      "id": 1,
+      "code": "CAT-CCTV-IP",
+      "nameFa": "دوربین‌های تحت شبکه IP",
+      "descriptionFa": "دوربین‌های نظارت تصویری هوشمند تحت شبکه، لنز استارلایت، فشرده‌سازی H.265+ و PoE",
+      "isActive": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "code": "CAT-CCTV-ANLG",
+      "nameFa": "دوربین‌های آنالوگ HD (HDCVI / TurboHD)",
+      "descriptionFa": "دوربین‌های کواکسیال با کیفیت بالا 2MP تا 5MP و دید در شب وارم‌لایت",
+      "isActive": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 3,
+      "code": "CAT-NVR-XVR",
+      "nameFa": "دستگاه‌های ضبط و سرور NVR / XVR",
+      "descriptionFa": "دستگاه‌های ضبط ویدئویی تحت شبکه با پهنای باند بالا و پورت‌های داخلی PoE",
+      "isActive": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 4,
+      "code": "CAT-STORAGE",
+      "nameFa": "هارد دیسک و حافظه نظارتی",
+      "descriptionFa": "هارد دیسک‌های تخصصی پایش تصویری ۲۴/۷ بنفش و اسکای‌هاوک با فریمور AllFrame",
+      "isActive": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 5,
+      "code": "CAT-NET-POE",
+      "nameFa": "سوییچ‌های شبکه و رک و PoE",
+      "descriptionFa": "سوییچ‌های لایه ۲ و ۳ با پورت‌های گیگابیت، پورت‌های PoE+ و قابلیت Extended Mode",
+      "isActive": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 6,
+      "code": "CAT-CABLE-ACC",
+      "nameFa": "کابل، اتصالات و لوازم جانبی نصب",
+      "descriptionFa": "کابل‌های شبکه تمام مس با استاندارد تست فلوک، فیش‌های BNC و پچ‌کورد",
+      "isActive": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "itemBrands": [
+    {
+      "id": 1,
+      "code": "BRD-DAHUA",
+      "nameEn": "Dahua Technology",
+      "nameFa": "داهوا تکنولوژی",
+      "originCountryFa": "چین",
+      "isActive": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "code": "BRD-HIKVISION",
+      "nameEn": "Hikvision",
+      "nameFa": "هایک‌ویژن",
+      "originCountryFa": "چین",
+      "isActive": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 3,
+      "code": "BRD-WESTERN",
+      "nameEn": "Western Digital",
+      "nameFa": "وسترن دیجیتال",
+      "originCountryFa": "آمریکا",
+      "isActive": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 4,
+      "code": "BRD-SEAGATE",
+      "nameEn": "Seagate",
+      "nameFa": "سیگیت",
+      "originCountryFa": "آمریکا",
+      "isActive": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 5,
+      "code": "BRD-TIANDY",
+      "nameEn": "Tiandy",
+      "nameFa": "تیاندی",
+      "originCountryFa": "چین",
+      "isActive": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 6,
+      "code": "BRD-LEGRAND",
+      "nameEn": "Legrand",
+      "nameFa": "لگراند",
+      "originCountryFa": "فرانسه",
+      "isActive": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "itemUnits": [
+    {
+      "id": 1,
+      "code": "UNIT-PCS",
+      "nameFa": "عدد",
+      "allowDecimals": false,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "code": "UNIT-DEV",
+      "nameFa": "دستگاه",
+      "allowDecimals": false,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 3,
+      "code": "UNIT-MTR",
+      "nameFa": "متر",
+      "allowDecimals": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 4,
+      "code": "UNIT-ROLL",
+      "nameFa": "حلقه (۳۰۵ متر)",
+      "allowDecimals": false,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 5,
+      "code": "UNIT-BOX",
+      "nameFa": "کارتن",
+      "allowDecimals": false,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "itemCode": "ITM-10001",
+      "barcode": "6939555811011",
+      "titleFa": "دوربین مداربسته تحت شبکه IP دام داهوا 4MP استارلایت",
+      "model": "IPC-HDW2431T-AS-S2",
+      "categoryId": 1,
+      "brandId": 1,
+      "unitId": 1,
+      "isSerialized": true,
+      "hasMacAddress": true,
+      "technicalSpecs": {
+        "resolution": "4MP (2688x1520)",
+        "lens": "2.8mm Starlight Fixed",
+        "nightVision": "30m Smart IR",
+        "poe": true,
+        "casing": "IP67 Metal",
+        "audio": "میکروفون داخلی Built-in Mic",
+        "compression": "H.265+ / H.264+",
+        "sdSlot": "Up to 256GB Micro SD"
+      },
+      "minStockAlert": 5,
+      "maxStockLevel": 50,
+      "purchasePriceIrr": 38000000,
+      "salePriceIrr": 48500000,
+      "status": "ACTIVE",
+      "notes": "پرفروش‌ترین دوربین دام IP برای محیط‌های داخلی و فروشگاهی",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "itemCode": "ITM-10002",
+      "barcode": "6939555811022",
+      "titleFa": "دوربین مداربسته بولت هایک‌ویژن 4MP دید در شب رنگی ColorVu",
+      "model": "DS-2CD2047G2-LU",
+      "categoryId": 1,
+      "brandId": 2,
+      "unitId": 1,
+      "isSerialized": true,
+      "hasMacAddress": true,
+      "technicalSpecs": {
+        "resolution": "4MP (2688x1520)",
+        "lens": "4mm F1.0 ColorVu",
+        "nightVision": "40m Warm Light Full-Color",
+        "poe": true,
+        "casing": "IP67 Metal Weatherproof",
+        "smartFeatures": "AcuSense تشخیص انسان و وسیله نقلیه",
+        "compression": "H.265+"
+      },
+      "minStockAlert": 4,
+      "maxStockLevel": 40,
+      "purchasePriceIrr": 52000000,
+      "salePriceIrr": 66000000,
+      "status": "ACTIVE",
+      "notes": "دید در شب تمام رنگی ۲۴ ساعته مناسب ورودی ساختمان‌ها و محوطه‌ها",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 3,
+      "itemCode": "ITM-10003",
+      "barcode": "6939555811033",
+      "titleFa": "دستگاه ضبط ویدئویی ۱۶ کانال NVR داهوا با ۱۶ پورت PoE",
+      "model": "NVR4216-16P-4KS2",
+      "categoryId": 3,
+      "brandId": 1,
+      "unitId": 2,
+      "isSerialized": true,
+      "hasMacAddress": true,
+      "technicalSpecs": {
+        "channels": 16,
+        "poePorts": 16,
+        "incomingBandwidth": "200 Mbps",
+        "maxResolution": "4K / 8MP Realtime",
+        "hddSlots": 2,
+        "maxStorage": "2x 10TB SATA",
+        "hdmiOutput": "4K HDMI + VGA"
+      },
+      "minStockAlert": 2,
+      "maxStockLevel": 20,
+      "purchasePriceIrr": 145000000,
+      "salePriceIrr": 185000000,
+      "status": "ACTIVE",
+      "notes": "دستگاه مرکزی پروژه ۶۴ کانال برج آفتاب",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 4,
+      "itemCode": "ITM-10004",
+      "barcode": "718037841122",
+      "titleFa": "هارد دیسک نظارتی ۴ ترابایت بنفش وسترن دیجیتال Purple",
+      "model": "WD40PURZ",
+      "categoryId": 4,
+      "brandId": 3,
+      "unitId": 1,
+      "isSerialized": true,
+      "hasMacAddress": false,
+      "technicalSpecs": {
+        "capacity": "4 Terabytes",
+        "cache": "64MB Cache",
+        "interface": "SATA 6 Gb/s",
+        "workloadRate": "180 TB/year",
+        "camerasSupported": "Up to 64 HD Cameras",
+        "firmware": "AllFrame 4K"
+      },
+      "minStockAlert": 6,
+      "maxStockLevel": 60,
+      "purchasePriceIrr": 68000000,
+      "salePriceIrr": 82000000,
+      "status": "ACTIVE",
+      "notes": "گارانتی اصلی ۲۴ ماهه تعویض شرکت سازگار/الماس",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 5,
+      "itemCode": "ITM-10005",
+      "barcode": "3245060327552",
+      "titleFa": "کابل شبکه لگراند Cat6 SFTP تمام مس تست فلوک پرمننت",
+      "model": "Legrand 032755 Cat6 SFTP",
+      "categoryId": 6,
+      "brandId": 6,
+      "unitId": 4,
+      "isSerialized": false,
+      "hasMacAddress": false,
+      "technicalSpecs": {
+        "cableType": "Cat6 SFTP (Shielded & Foiled)",
+        "conductor": "100% Pure Bare Copper (مفتول تمام مس 23AWG)",
+        "sheath": "LSZH ضد اشتعال و دود کم",
+        "rollLength": "حلقه ۳۰۵ متری",
+        "flukeTest": "Fluke Permanent Link Passed"
+      },
+      "minStockAlert": 3,
+      "maxStockLevel": 30,
+      "purchasePriceIrr": 58000000,
+      "salePriceIrr": 72000000,
+      "status": "ACTIVE",
+      "notes": "کابل استاندارد پروژه‌های شبکه و فیبر بدون نویز صنعتی",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 6,
+      "itemCode": "ITM-10006",
+      "barcode": "6941235678001",
+      "titleFa": "سوییچ شبکه ۱۶ پورت PoE تیاندی Tiandy با ۲ پورت آپلینک گیگابیت",
+      "model": "TC-P16E2G",
+      "categoryId": 5,
+      "brandId": 5,
+      "unitId": 2,
+      "isSerialized": true,
+      "hasMacAddress": true,
+      "technicalSpecs": {
+        "totalPorts": 18,
+        "poePorts": "16x 10/100 Mbps PoE+ (802.3af/at)",
+        "poeBudget": "250 Watts",
+        "uplinkPorts": "2x 10/100/1000 Mbps Gigabit",
+        "extendMode": "تا ۲۵۰ متر در حالت دوربین CCTV"
+      },
+      "minStockAlert": 2,
+      "maxStockLevel": 15,
+      "purchasePriceIrr": 42000000,
+      "salePriceIrr": 54000000,
+      "status": "ACTIVE",
+      "notes": "سوییچ تخصصی نصب سیستم‌های حفاظتی بدون افت فریم",
+      "isDemo": true,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "warehouses": [
+    {
+      "id": 1,
+      "warehouseCode": "WH-01",
+      "titleFa": "انبار مرکزی خیابان جمهوری",
+      "keeperNameFa": "حسین رضایی",
+      "phone": "021-66748921",
+      "addressFa": "تهران، خیابان جمهوری، تقاطع حافظ، طبقه منهای یک مجتمع مهرگان",
+      "status": "ACTIVE",
+      "isDefault": true,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "warehouseCode": "WH-02",
+      "titleFa": "انبار خدمات پس از فروش و گارانتی",
+      "keeperNameFa": "مهرداد کاظمی",
+      "phone": "021-66748922",
+      "addressFa": "تهران، خیابان جمهوری، پاساژ امجد، واحد پشتیبانی فنی مهرگان",
+      "status": "ACTIVE",
+      "isDefault": false,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 3,
+      "warehouseCode": "WH-03",
+      "titleFa": "انبار پروژه‌ها و تجهیزات نصابان",
+      "keeperNameFa": "محسن شریفی",
+      "phone": "021-66748923",
+      "addressFa": "تهران، انبار کارگاهی خیابان حافظ، کوچه زرتشتیان، پلاک ۵",
+      "status": "ACTIVE",
+      "isDefault": false,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "itemSerials": [
+    {
+      "id": 1,
+      "itemId": 1,
+      "itemCode": "ITM-10001",
+      "itemTitleFa": "دوربین مداربسته تحت شبکه IP دام داهوا 4MP استارلایت",
+      "serialNumber": "SN-DH-261011",
+      "macAddress": "3C:EF:8C:11:22:33",
+      "currentWarehouseId": 3,
+      "status": "DISPATCHED",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-OUT-1405-1001",
+      "lastPartyId": 1,
+      "lastPartyNameFa": "شرکت ساختمانی نگین البرز (پروژه برج آفتاب)",
+      "notesFa": "تحویل داده شده به پروژه برج آفتاب",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "itemId": 1,
+      "itemCode": "ITM-10001",
+      "itemTitleFa": "دوربین مداربسته تحت شبکه IP دام داهوا 4MP استارلایت",
+      "serialNumber": "SN-DH-261012",
+      "macAddress": "3C:EF:8C:11:22:34",
+      "currentWarehouseId": 3,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-TRF-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "موجود در انبار پروژه‌ها برای نصب فاز ۲",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 3,
+      "itemId": 1,
+      "itemCode": "ITM-10001",
+      "itemTitleFa": "دوربین مداربسته تحت شبکه IP دام داهوا 4MP استارلایت",
+      "serialNumber": "SN-DH-261013",
+      "macAddress": "3C:EF:8C:11:22:35",
+      "currentWarehouseId": 1,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-IN-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "پلمپ شرکتی در انبار مرکزی",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 4,
+      "itemId": 1,
+      "itemCode": "ITM-10001",
+      "itemTitleFa": "دوربین مداربسته تحت شبکه IP دام داهوا 4MP استارلایت",
+      "serialNumber": "SN-DH-261014",
+      "macAddress": "3C:EF:8C:11:22:36",
+      "currentWarehouseId": 1,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-IN-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "پلمپ شرکتی در انبار مرکزی",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 5,
+      "itemId": 1,
+      "itemCode": "ITM-10001",
+      "itemTitleFa": "دوربین مداربسته تحت شبکه IP دام داهوا 4MP استارلایت",
+      "serialNumber": "SN-DH-261015",
+      "macAddress": "3C:EF:8C:11:22:37",
+      "currentWarehouseId": 1,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-IN-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "پلمپ شرکتی در انبار مرکزی",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 6,
+      "itemId": 2,
+      "itemCode": "ITM-10002",
+      "itemTitleFa": "دوربین مداربسته بولت هایک‌ویژن 4MP دید در شب رنگی ColorVu",
+      "serialNumber": "SN-HK-262011",
+      "macAddress": "44:A8:42:55:66:01",
+      "currentWarehouseId": 1,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-IN-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "انبار مرکزی",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 7,
+      "itemId": 2,
+      "itemCode": "ITM-10002",
+      "itemTitleFa": "دوربین مداربسته بولت هایک‌ویژن 4MP دید در شب رنگی ColorVu",
+      "serialNumber": "SN-HK-262012",
+      "macAddress": "44:A8:42:55:66:02",
+      "currentWarehouseId": 1,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-IN-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "انبار مرکزی",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 8,
+      "itemId": 2,
+      "itemCode": "ITM-10002",
+      "itemTitleFa": "دوربین مداربسته بولت هایک‌ویژن 4MP دید در شب رنگی ColorVu",
+      "serialNumber": "SN-HK-262013",
+      "macAddress": "44:A8:42:55:66:03",
+      "currentWarehouseId": 1,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-IN-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "انبار مرکزی",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 9,
+      "itemId": 2,
+      "itemCode": "ITM-10002",
+      "itemTitleFa": "دوربین مداربسته بولت هایک‌ویژن 4MP دید در شب رنگی ColorVu",
+      "serialNumber": "SN-HK-262014",
+      "macAddress": "44:A8:42:55:66:04",
+      "currentWarehouseId": 1,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-IN-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "انبار مرکزی",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 10,
+      "itemId": 3,
+      "itemCode": "ITM-10003",
+      "itemTitleFa": "دستگاه ضبط ویدئویی ۱۶ کانال NVR داهوا با ۱۶ پورت PoE",
+      "serialNumber": "SN-NVR-263001",
+      "macAddress": "A0:BD:1D:99:88:77",
+      "currentWarehouseId": 1,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-IN-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "پلمپ با کابل‌های برق و موس در انبار مرکزی",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 11,
+      "itemId": 3,
+      "itemCode": "ITM-10003",
+      "itemTitleFa": "دستگاه ضبط ویدئویی ۱۶ کانال NVR داهوا با ۱۶ پورت PoE",
+      "serialNumber": "SN-NVR-263002",
+      "macAddress": "A0:BD:1D:99:88:78",
+      "currentWarehouseId": 1,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-IN-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "پلمپ با کابل‌های برق و موس در انبار مرکزی",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 12,
+      "itemId": 4,
+      "itemCode": "ITM-10004",
+      "itemTitleFa": "هارد دیسک نظارتی ۴ ترابایت بنفش وسترن دیجیتال Purple",
+      "serialNumber": "SN-WD-264001",
+      "macAddress": null,
+      "currentWarehouseId": 3,
+      "status": "DISPATCHED",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-OUT-1405-1001",
+      "lastPartyId": 1,
+      "lastPartyNameFa": "شرکت ساختمانی نگین البرز (پروژه برج آفتاب)",
+      "notesFa": "نصب شده روی دستگاه NVR پروژه آفتاب",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 13,
+      "itemId": 4,
+      "itemCode": "ITM-10004",
+      "itemTitleFa": "هارد دیسک نظارتی ۴ ترابایت بنفش وسترن دیجیتال Purple",
+      "serialNumber": "SN-WD-264002",
+      "macAddress": null,
+      "currentWarehouseId": 1,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-IN-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "گارانتی فعال",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 14,
+      "itemId": 4,
+      "itemCode": "ITM-10004",
+      "itemTitleFa": "هارد دیسک نظارتی ۴ ترابایت بنفش وسترن دیجیتال Purple",
+      "serialNumber": "SN-WD-264003",
+      "macAddress": null,
+      "currentWarehouseId": 1,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-IN-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "گارانتی فعال",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 15,
+      "itemId": 4,
+      "itemCode": "ITM-10004",
+      "itemTitleFa": "هارد دیسک نظارتی ۴ ترابایت بنفش وسترن دیجیتال Purple",
+      "serialNumber": "SN-WD-264004",
+      "macAddress": null,
+      "currentWarehouseId": 1,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-IN-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "گارانتی فعال",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 16,
+      "itemId": 4,
+      "itemCode": "ITM-10004",
+      "itemTitleFa": "هارد دیسک نظارتی ۴ ترابایت بنفش وسترن دیجیتال Purple",
+      "serialNumber": "SN-WD-264005",
+      "macAddress": null,
+      "currentWarehouseId": 1,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-IN-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "گارانتی فعال",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 17,
+      "itemId": 6,
+      "itemCode": "ITM-10006",
+      "itemTitleFa": "سوییچ شبکه ۱۶ پورت PoE تیاندی Tiandy با ۲ پورت آپلینک گیگابیت",
+      "serialNumber": "SN-SW-266001",
+      "macAddress": "68:D7:9A:12:34:56",
+      "currentWarehouseId": 1,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-IN-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "سوییچ ۱۶ پورت PoE در انبار مرکزی",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 18,
+      "itemId": 6,
+      "itemCode": "ITM-10006",
+      "itemTitleFa": "سوییچ شبکه ۱۶ پورت PoE تیاندی Tiandy با ۲ پورت آپلینک گیگابیت",
+      "serialNumber": "SN-SW-266002",
+      "macAddress": "68:D7:9A:12:34:57",
+      "currentWarehouseId": 1,
+      "status": "IN_STOCK",
+      "initialDocNumber": "WH-IN-1405-1001",
+      "lastDocNumber": "WH-IN-1405-1001",
+      "lastPartyId": 2,
+      "notesFa": "سوییچ ۱۶ پورت PoE در انبار مرکزی",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "inventoryDocuments": [
+    {
+      "id": 1,
+      "docNumber": "WH-IN-1405-1001",
+      "docType": "INBOUND_PURCHASE",
+      "dateJalali": "1405/01/08",
+      "sourceWarehouseId": null,
+      "sourceWarehouseTitleFa": null,
+      "targetWarehouseId": 1,
+      "targetWarehouseTitleFa": "انبار مرکزی خیابان جمهوری",
+      "partyId": 2,
+      "partyNameFa": "شرکت بازرگانی فناوری پارس پویا (واردکننده رسمی Hikvision & Dahua)",
+      "lines": [
+        {
+          "id": 1,
+          "itemId": 1,
+          "itemCode": "ITM-10001",
+          "itemTitleFa": "دوربین مداربسته تحت شبکه IP دام داهوا 4MP استارلایت",
+          "unitNameFa": "عدد",
+          "quantity": 5,
+          "unitCostIrr": 38000000,
+          "totalCostIrr": 190000000,
+          "serialNumbers": [
+            "SN-DH-261011",
+            "SN-DH-261012",
+            "SN-DH-261013",
+            "SN-DH-261014",
+            "SN-DH-261015"
+          ],
+          "notesFa": "دوربین دام IP داهوا"
+        },
+        {
+          "id": 2,
+          "itemId": 2,
+          "itemCode": "ITM-10002",
+          "itemTitleFa": "دوربین مداربسته بولت هایک‌ویژن 4MP دید در شب رنگی ColorVu",
+          "unitNameFa": "عدد",
+          "quantity": 4,
+          "unitCostIrr": 52000000,
+          "totalCostIrr": 208000000,
+          "serialNumbers": [
+            "SN-HK-262011",
+            "SN-HK-262012",
+            "SN-HK-262013",
+            "SN-HK-262014"
+          ],
+          "notesFa": "دوربین بولت کالرویو هایک‌ویژن"
+        },
+        {
+          "id": 3,
+          "itemId": 3,
+          "itemCode": "ITM-10003",
+          "itemTitleFa": "دستگاه ضبط ویدئویی ۱۶ کانال NVR داهوا با ۱۶ پورت PoE",
+          "unitNameFa": "دستگاه",
+          "quantity": 2,
+          "unitCostIrr": 145000000,
+          "totalCostIrr": 290000000,
+          "serialNumbers": [
+            "SN-NVR-263001",
+            "SN-NVR-263002"
+          ],
+          "notesFa": "دستگاه NVR 16 کانال"
+        },
+        {
+          "id": 4,
+          "itemId": 4,
+          "itemCode": "ITM-10004",
+          "itemTitleFa": "هارد دیسک نظارتی ۴ ترابایت بنفش وسترن دیجیتال Purple",
+          "unitNameFa": "عدد",
+          "quantity": 5,
+          "unitCostIrr": 68000000,
+          "totalCostIrr": 340000000,
+          "serialNumbers": [
+            "SN-WD-264001",
+            "SN-WD-264002",
+            "SN-WD-264003",
+            "SN-WD-264004",
+            "SN-WD-264005"
+          ],
+          "notesFa": "هارد دیسک بنفش ۴ ترابایت"
+        },
+        {
+          "id": 5,
+          "itemId": 5,
+          "itemCode": "ITM-10005",
+          "itemTitleFa": "کابل شبکه لگراند Cat6 SFTP تمام مس تست فلوک پرمننت",
+          "unitNameFa": "حلقه (۳۰۵ متر)",
+          "quantity": 5,
+          "unitCostIrr": 58000000,
+          "totalCostIrr": 290000000,
+          "notesFa": "کابل لگراند Cat6 SFTP"
+        },
+        {
+          "id": 6,
+          "itemId": 6,
+          "itemCode": "ITM-10006",
+          "itemTitleFa": "سوییچ شبکه ۱۶ پورت PoE تیاندی Tiandy با ۲ پورت آپلینک گیگابیت",
+          "unitNameFa": "دستگاه",
+          "quantity": 2,
+          "unitCostIrr": 42000000,
+          "totalCostIrr": 84000000,
+          "serialNumbers": [
+            "SN-SW-266001",
+            "SN-SW-266002"
+          ],
+          "notesFa": "سوییچ ۱۶ پورت PoE تیاندی"
+        }
+      ],
+      "totalAmountIrr": 1402000000,
+      "status": "CONFIRMED",
+      "notesFa": "رسید انبار محموله ورودی اول سال ۱۴۰۵ از واردکننده رسمی پارس پویا",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "docNumber": "WH-TRF-1405-1001",
+      "docType": "TRANSFER",
+      "dateJalali": "1405/01/14",
+      "sourceWarehouseId": 1,
+      "sourceWarehouseTitleFa": "انبار مرکزی خیابان جمهوری",
+      "targetWarehouseId": 3,
+      "targetWarehouseTitleFa": "انبار پروژه‌ها و تجهیزات نصابان",
+      "partyId": 3,
+      "partyNameFa": "مهندس علیرضا بهرامی (نصاب ارشد)",
+      "lines": [
+        {
+          "id": 1,
+          "itemId": 1,
+          "itemCode": "ITM-10001",
+          "itemTitleFa": "دوربین مداربسته تحت شبکه IP دام داهوا 4MP استارلایت",
+          "unitNameFa": "عدد",
+          "quantity": 2,
+          "unitCostIrr": 38000000,
+          "totalCostIrr": 76000000,
+          "serialNumbers": [
+            "SN-DH-261011",
+            "SN-DH-261012"
+          ],
+          "notesFa": "انتقال دو عدد دوربین دام IP برای پروژه آفتاب"
+        },
+        {
+          "id": 2,
+          "itemId": 4,
+          "itemCode": "ITM-10004",
+          "itemTitleFa": "هارد دیسک نظارتی ۴ ترابایت بنفش وسترن دیجیتال Purple",
+          "unitNameFa": "عدد",
+          "quantity": 1,
+          "unitCostIrr": 68000000,
+          "totalCostIrr": 68000000,
+          "serialNumbers": [
+            "SN-WD-264001"
+          ],
+          "notesFa": "انتقال یک عدد هارد ۴ ترابایت"
+        },
+        {
+          "id": 3,
+          "itemId": 5,
+          "itemCode": "ITM-10005",
+          "itemTitleFa": "کابل شبکه لگراند Cat6 SFTP تمام مس تست فلوک پرمننت",
+          "unitNameFa": "حلقه (۳۰۵ متر)",
+          "quantity": 1,
+          "unitCostIrr": 58000000,
+          "totalCostIrr": 58000000,
+          "notesFa": "یک حلقه کابل لگراند"
+        }
+      ],
+      "totalAmountIrr": 202000000,
+      "status": "CONFIRMED",
+      "notesFa": "برگه انتقال اقلام پروژه از انبار مرکزی به انبار کارگاهی نصاب",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 3,
+      "docNumber": "WH-OUT-1405-1001",
+      "docType": "OUTBOUND_SALE",
+      "dateJalali": "1405/01/15",
+      "sourceWarehouseId": 3,
+      "sourceWarehouseTitleFa": "انبار پروژه‌ها و تجهیزات نصابان",
+      "targetWarehouseId": null,
+      "targetWarehouseTitleFa": null,
+      "partyId": 1,
+      "partyNameFa": "شرکت ساختمانی نگین البرز (پروژه برج آفتاب)",
+      "lines": [
+        {
+          "id": 1,
+          "itemId": 1,
+          "itemCode": "ITM-10001",
+          "itemTitleFa": "دوربین مداربسته تحت شبکه IP دام داهوا 4MP استارلایت",
+          "unitNameFa": "عدد",
+          "quantity": 1,
+          "unitCostIrr": 38000000,
+          "totalCostIrr": 38000000,
+          "serialNumbers": [
+            "SN-DH-261011"
+          ],
+          "notesFa": "تحویل نهایی و نصب روی دکل لابی برج آفتاب"
+        },
+        {
+          "id": 2,
+          "itemId": 4,
+          "itemCode": "ITM-10004",
+          "itemTitleFa": "هارد دیسک نظارتی ۴ ترابایت بنفش وسترن دیجیتال Purple",
+          "unitNameFa": "عدد",
+          "quantity": 1,
+          "unitCostIrr": 68000000,
+          "totalCostIrr": 68000000,
+          "serialNumbers": [
+            "SN-WD-264001"
+          ],
+          "notesFa": "نصب داخل رک مانیتورینگ"
+        }
+      ],
+      "totalAmountIrr": 106000000,
+      "status": "CONFIRMED",
+      "notesFa": "حواله خروج انبار عطف به فاکتور فروش INV-1405-1001 نگین البرز",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "purchaseProformas": [
+    {
+      "id": 1,
+      "proformaNumber": "PO-1405-1001",
+      "supplierId": 2,
+      "supplierTitleFa": "بازرگانی پارس پویا (واردکننده رسمی تجهیزات داهوا و هایک‌ویژن)",
+      "dateJalali": "1405/01/08",
+      "validUntilJalali": "1405/01/25",
+      "currency": "AED",
+      "exchangeRateToIrr": 250000,
+      "lines": [
+        {
+          "id": 1,
+          "itemId": 1,
+          "itemCode": "ITM-10001",
+          "itemTitleFa": "دوربین مداربسته تحت شبکه IP دام داهوا 4MP استارلایت",
+          "unitNameFa": "عدد",
+          "quantity": 5,
+          "unitPriceForeign": 168,
+          "unitPriceIrr": 42000000,
+          "totalPriceIrr": 210000000,
+          "notesFa": "سفارش خرید ۵ عدد دوربین داهوا مدل HDW2431T"
+        },
+        {
+          "id": 2,
+          "itemId": 3,
+          "itemCode": "ITM-10003",
+          "itemTitleFa": "دستگاه ضبط تحت شبکه NVR داهوا 16 کانال 4K سری هوشمند",
+          "unitNameFa": "دستگاه",
+          "quantity": 3,
+          "unitPriceForeign": 500,
+          "unitPriceIrr": 125000000,
+          "totalPriceIrr": 375000000,
+          "notesFa": "سفارش خرید ۳ دستگاه NVR داهوا سری WizSense"
+        }
+      ],
+      "subtotalIrr": 585000000,
+      "status": "CONVERTED",
+      "convertedInvoiceId": 1,
+      "notesFa": "پیش‌فاکتور ارزی امارات، تایید شده و به فاکتور خرید PI-1405-1001 تبدیل گردید.",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "proformaNumber": "PO-1405-1002",
+      "supplierId": 3,
+      "supplierTitleFa": "شرکت ارتباطات امن پیشرو (تجهیزات شبکه، رادیو و سوییچ‌های PoE)",
+      "dateJalali": "1405/01/22",
+      "validUntilJalali": "1405/02/10",
+      "currency": "USD",
+      "exchangeRateToIrr": 920000,
+      "lines": [
+        {
+          "id": 1,
+          "itemId": 6,
+          "itemCode": "ITM-10006",
+          "itemTitleFa": "سوییچ شبکه ۱۶ پورت PoE تیاندی Tiandy با ۲ پورت آپلینک گیگابیت",
+          "unitNameFa": "دستگاه",
+          "quantity": 4,
+          "unitPriceForeign": 105,
+          "unitPriceIrr": 96600000,
+          "totalPriceIrr": 386400000,
+          "notesFa": "سوییچ‌های شبکه PoE برای پروژه بیمارستان"
+        },
+        {
+          "id": 2,
+          "itemId": 5,
+          "itemCode": "ITM-10005",
+          "itemTitleFa": "کابل شبکه لگراند Cat6 SFTP تمام مس تست فلوک پرمننت",
+          "unitNameFa": "حلقه (۳۰۵ متر)",
+          "quantity": 6,
+          "unitPriceForeign": 62,
+          "unitPriceIrr": 57040000,
+          "totalPriceIrr": 342240000,
+          "notesFa": "کابل شبکه تست فلوک"
+        }
+      ],
+      "subtotalIrr": 728640000,
+      "status": "APPROVED",
+      "convertedInvoiceId": null,
+      "notesFa": "پیش‌فاکتور خرید تجهیزات پسیو و اکتیو شبکه با تایید مدیریت فنی",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "purchaseInvoices": [
+    {
+      "id": 1,
+      "invoiceNumber": "PI-1405-1001",
+      "supplierInvoiceNumber": "INV-PARS-8821",
+      "supplierId": 2,
+      "supplierTitleFa": "بازرگانی پارس پویا (واردکننده رسمی تجهیزات داهوا و هایک‌ویژن)",
+      "targetWarehouseId": 1,
+      "targetWarehouseTitleFa": "انبار مرکزی و کالای تجاری",
+      "proformaId": 1,
+      "proformaNumber": "PO-1405-1001",
+      "dateJalali": "1405/01/10",
+      "dueDateJalali": "1405/02/10",
+      "currency": "AED",
+      "exchangeRateToIrr": 250000,
+      "costAllocationMethod": "BY_VALUE",
+      "landedCosts": {
+        "freightCostIrr": 15000000,
+        "insuranceCostIrr": 5000000,
+        "packagingCostIrr": 3000000,
+        "customsCostIrr": 35000000,
+        "nonRefundableTaxIrr": 12000000,
+        "otherLandedCostIrr": 0,
+        "totalLandedCostsIrr": 70000000
+      },
+      "lines": [
+        {
+          "id": 1,
+          "itemId": 1,
+          "itemCode": "ITM-10001",
+          "itemTitleFa": "دوربین مداربسته تحت شبکه IP دام داهوا 4MP استارلایت",
+          "unitNameFa": "عدد",
+          "quantity": 5,
+          "unitPriceForeign": 168,
+          "unitPriceIrr": 42000000,
+          "discountIrr": 0,
+          "vatAmountIrr": 0,
+          "netPriceIrr": 210000000,
+          "allocatedLandedCostPerUnitIrr": 5025641,
+          "finalLandedCostPerUnitIrr": 47025641,
+          "totalLandedCostIrr": 235128205,
+          "serialNumbers": [
+            "SN-DH-261011",
+            "SN-DH-261012",
+            "SN-DH-261013",
+            "SN-DH-261014",
+            "SN-DH-261015"
+          ],
+          "macAddresses": [
+            "3C:EF:8C:11:22:01",
+            "3C:EF:8C:11:22:02",
+            "3C:EF:8C:11:22:03",
+            "3C:EF:8C:11:22:04",
+            "3C:EF:8C:11:22:05"
+          ],
+          "notesFa": "۵ عدد دوربین داهوا استارلایت با تخصیص هزینه‌های سربار واردات"
+        },
+        {
+          "id": 2,
+          "itemId": 3,
+          "itemCode": "ITM-10003",
+          "itemTitleFa": "دستگاه ضبط تحت شبکه NVR داهوا 16 کانال 4K سری هوشمند",
+          "unitNameFa": "دستگاه",
+          "quantity": 3,
+          "unitPriceForeign": 500,
+          "unitPriceIrr": 125000000,
+          "discountIrr": 0,
+          "vatAmountIrr": 0,
+          "netPriceIrr": 375000000,
+          "allocatedLandedCostPerUnitIrr": 14957265,
+          "finalLandedCostPerUnitIrr": 139957265,
+          "totalLandedCostIrr": 419871795,
+          "serialNumbers": [
+            "SN-NVR-16-901",
+            "SN-NVR-16-902",
+            "SN-NVR-16-903"
+          ],
+          "macAddresses": [
+            "3C:EF:8C:20:00:01",
+            "3C:EF:8C:20:00:02",
+            "3C:EF:8C:20:00:03"
+          ],
+          "notesFa": "۳ دستگاه NVR 16 کانال داهوا با بهای تمام‌شده نهایی مستند"
+        }
+      ],
+      "subtotalNetItemsIrr": 585000000,
+      "totalDiscountIrr": 0,
+      "totalVatIrr": 0,
+      "totalInvoicePayableToSupplierIrr": 585000000,
+      "totalInventoryValuationIrr": 655000000,
+      "paidAmountIrr": 400000000,
+      "remainingDebtIrr": 185000000,
+      "status": "PARTIALLY_PAID",
+      "inventoryDocId": 1,
+      "inventoryDocNumber": "WH-IN-1405-1001",
+      "notesFa": "فاکتور قطعی خرید ارزی داهوا؛ رسید انبار و گردش بدهی به طرف تجاری ثبت شد.",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "purchasePayments": [
+    {
+      "id": 1,
+      "paymentNumber": "PAY-1405-1001",
+      "supplierId": 2,
+      "supplierTitleFa": "بازرگانی پارس پویا (واردکننده رسمی تجهیزات داهوا و هایک‌ویژن)",
+      "purchaseInvoiceId": 1,
+      "invoiceNumber": "PI-1405-1001",
+      "paymentDateJalali": "1405/01/12",
+      "amountIrr": 400000000,
+      "paymentMethod": "SATNA_PAYA",
+      "sourceAccountOrBank": "بانک ملت - حساب جاری مرکزی مهرگان",
+      "trackingReference": "PAYA-14050112-98432",
+      "notesFa": "پرداخت مرحله اول فاکتور PI-1405-1001 از طریق حواله پایا",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "purchaseReturns": [],
+  "salesProformas": [
+    {
+      "id": 1,
+      "proformaNumber": "SQO-1405-1001",
+      "customerId": 1,
+      "customerTitleFa": "شرکت ساختمانی نگین البرز (پروژه برج آفتاب)",
+      "dateJalali": "1405/01/15",
+      "validUntilJalali": "1405/02/15",
+      "lines": [
+        {
+          "id": 1,
+          "itemId": 1,
+          "itemCode": "ITM-10001",
+          "itemTitleFa": "دوربین مداربسته تحت شبکه IP دام داهوا 4MP استارلایت",
+          "unitNameFa": "عدد",
+          "quantity": 10,
+          "unitPriceIrr": 58000000,
+          "discountIrr": 2000000,
+          "vatAmountIrr": 5040000,
+          "totalPriceIrr": 610400000,
+          "notesFa": "۱۰ عدد دوربین استارلایت با تخفیف پروژه بیمارستانی"
+        }
+      ],
+      "subtotalItemsIrr": 560000000,
+      "totalDiscountIrr": 20000000,
+      "totalVatIrr": 50400000,
+      "totalPayableIrr": 610400000,
+      "status": "APPROVED",
+      "notesFa": "پیش‌فاکتور رسمی فروش تجهیزات پروژه برج آفتاب",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "salesInvoices": [
+    {
+      "id": 1,
+      "invoiceNumber": "INV-1405-1001",
+      "saleType": "STANDARD_SALE",
+      "customerId": 1,
+      "customerTitleFa": "شرکت ساختمانی نگین البرز (پروژه برج آفتاب)",
+      "sourceWarehouseId": 1,
+      "sourceWarehouseTitleFa": "انبار مرکزی و کالای تجاری",
+      "proformaId": null,
+      "proformaNumber": null,
+      "dateJalali": "1405/01/18",
+      "dueDateJalali": "1405/02/18",
+      "lines": [
+        {
+          "id": 1,
+          "itemId": 4,
+          "itemCode": "ITM-10004",
+          "itemTitleFa": "سوییچ شبکه PoE داهوا 8 پورت گیگابیت صنعتی",
+          "unitNameFa": "دستگاه",
+          "quantity": 4,
+          "unitPriceIrr": 72000000,
+          "discountIrr": 2000000,
+          "vatAmountIrr": 6300000,
+          "netPriceIrr": 305200000,
+          "unitCogsIrr": 48300000,
+          "totalCogsIrr": 193200000,
+          "serialNumbers": [
+            "SN-POE-8P-701",
+            "SN-POE-8P-702",
+            "SN-POE-8P-703",
+            "SN-POE-8P-704"
+          ],
+          "macAddresses": [
+            "3C:EF:8C:30:10:01",
+            "3C:EF:8C:30:10:02",
+            "3C:EF:8C:30:10:03",
+            "3C:EF:8C:30:10:04"
+          ],
+          "notesFa": "تحویل ۴ دستگاه سوییچ شبکه PoE با ثبت بهای تمام‌شده مستند COGS"
+        }
+      ],
+      "subtotalNetItemsIrr": 280000000,
+      "totalDiscountIrr": 8000000,
+      "totalVatIrr": 25200000,
+      "totalInvoiceAmountIrr": 297200000,
+      "totalCogsIrr": 193200000,
+      "paidAmountIrr": 200000000,
+      "remainingBalanceIrr": 97200000,
+      "status": "PARTIALLY_PAID",
+      "inventoryDocId": 2,
+      "inventoryDocNumber": "WH-OUT-1405-1001",
+      "paymentDetails": {
+        "paymentMethod": "POS",
+        "trackingReference": "POS-14050118-8820",
+        "posTerminalOrBank": "کارتخوان بانک سامان - صندوق مرکزی"
+      },
+      "notesFa": "فاکتور قطعی فروش تجهیزات شبکه؛ حواله خروج انبار و بدهکار مشتری ثبت گردید.",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "salesReceipts": [
+    {
+      "id": 1,
+      "receiptNumber": "REC-1405-1001",
+      "customerId": 1,
+      "customerTitleFa": "شرکت ساختمانی نگین البرز (پروژه برج آفتاب)",
+      "salesInvoiceId": 1,
+      "invoiceNumber": "INV-1405-1001",
+      "paymentDateJalali": "1405/01/18",
+      "amountIrr": 200000000,
+      "paymentMethod": "POS",
+      "destinationBankOrCash": "کارتخوان بانک سامان - صندوق مرکزی",
+      "trackingReference": "POS-8820-9941",
+      "notesFa": "دریافت پیش‌پرداخت کارتخوان بابت فاکتور فروش INV-1405-1001",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "salesReturns": [],
+  "installationJobs": [
+    {
+      "id": 1,
+      "jobCode": "INS-1405-1001",
+      "titleFa": "نصب و راه‌اندازی سیستم دوربین مداربسته ۸ کاناله و کابل‌کشی داکت",
+      "customerId": 1,
+      "customerTitleFa": "شرکت ساختمانی نگین البرز (پروژه برج آفتاب)",
+      "salesInvoiceId": 1,
+      "invoiceNumber": "INV-1405-1001",
+      "installerId": 3,
+      "installerTitleFa": "مهندس علیرضا رضایی (تکنسین ارشد نصب و شبکه)",
+      "serviceFeeIrr": 45000000,
+      "additionalExpensesIrr": 15000000,
+      "totalCostIrr": 60000000,
+      "paidAmountIrr": 60000000,
+      "remainingBalanceIrr": 0,
+      "locationAddressFa": "تهران، خیابان ولیعصر، نرسیده به پارک وی، برج آفتاب، طبقه ۵",
+      "scheduledDateJalali": "1405/01/20",
+      "completedDateJalali": "1405/01/22",
+      "status": "COMPLETED",
+      "notesFa": "نصب ۸ عدد دوربین دام داهوا، رک دیواری و کانفیگ دستگاه NVR با موفقیت انجام و تحویل داده شد.",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "cashBoxes": [
+    {
+      "id": 1,
+      "boxCode": "CB-1001",
+      "titleFa": "صندوق مرکزی فروشگاه مهرگان",
+      "cashierUserId": 1,
+      "balanceIrr": 150000000,
+      "status": "ACTIVE",
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "boxCode": "CB-1002",
+      "titleFa": "صندوق فروش سریع (POS)",
+      "cashierUserId": 1,
+      "balanceIrr": 45000000,
+      "status": "ACTIVE",
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "bankAccounts": [
+    {
+      "id": 1,
+      "accountCode": "BA-1001",
+      "bankNameFa": "بانک سامان - شعبه جمهوری",
+      "accountNumber": "8820-9941-11",
+      "shabaNumber": "IR68-0560-0882-0099-4111-0001",
+      "balanceIrr": 850000000,
+      "status": "ACTIVE",
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "accountCode": "BA-1002",
+      "bankNameFa": "بانک ملی ایران - شعبه حافظ",
+      "accountNumber": "0104-5512-3001",
+      "shabaNumber": "IR12-0170-0000-0104-5512-3001",
+      "balanceIrr": 420000000,
+      "status": "ACTIVE",
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "cheques": [
+    {
+      "id": 1,
+      "chequeNumber": "CHQ-88201",
+      "chequeType": "INBOUND",
+      "partyId": 1,
+      "partyNameFa": "شرکت ساختمانی نگین البرز (پروژه برج آفتاب)",
+      "bankNameFa": "بانک تجارت",
+      "branchNameFa": "شعبه مرکزی",
+      "amountIrr": 120000000,
+      "issueDateJalali": "1405/01/15",
+      "dueDateJalali": "1405/02/10",
+      "status": "IN_HAND",
+      "notesFa": "چک دریافتی بابت بقیه تسویه فاکتور فروش",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "chequeNumber": "CHQ-44019",
+      "chequeType": "OUTBOUND",
+      "partyId": 2,
+      "partyNameFa": "بازرگانی تجهیزات شبکه فرادید (واردکننده رسمی)",
+      "bankNameFa": "بانک سامان",
+      "branchNameFa": "شعبه جمهوری",
+      "amountIrr": 350000000,
+      "issueDateJalali": "1405/01/10",
+      "dueDateJalali": "1405/02/15",
+      "status": "IN_HAND",
+      "notesFa": "چک پرداختی بابت خرید تجهیزات ارزی",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "treasuryTransactions": [
+    {
+      "id": 1,
+      "txNumber": "TRN-1405-1001",
+      "txType": "RECEIPT",
+      "dateJalali": "1405/01/18",
+      "partyId": 1,
+      "partyNameFa": "شرکت ساختمانی نگین البرز (پروژه برج آفتاب)",
+      "amountIrr": 200000000,
+      "paymentMethod": "POS",
+      "sourceBankAccountId": 1,
+      "notesFa": "دریافت وجه پیش‌پرداخت کارتخوان سامان بابت فاکتور فروش",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "installments": [
+    {
+      "id": 1,
+      "installmentCode": "INS-SCH-1001",
+      "titleFa": "قسط اول تجهیزات دوربین برج آفتاب",
+      "partyId": 1,
+      "partyNameFa": "شرکت ساختمانی نگین البرز (پروژه برج آفتاب)",
+      "salesInvoiceId": 1,
+      "installmentNumber": 1,
+      "totalInstallments": 3,
+      "amountIrr": 50000000,
+      "dueDateJalali": "1405/02/01",
+      "status": "PENDING",
+      "notesFa": "سررسید اول اقساط فروش توافقی",
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "installmentCode": "INS-SCH-1002",
+      "titleFa": "قسط دوم تجهیزات دوربین برج آفتاب",
+      "partyId": 1,
+      "partyNameFa": "شرکت ساختمانی نگین البرز (پروژه برج آفتاب)",
+      "salesInvoiceId": 1,
+      "installmentNumber": 2,
+      "totalInstallments": 3,
+      "amountIrr": 50000000,
+      "dueDateJalali": "1405/03/01",
+      "status": "PENDING",
+      "notesFa": "سررسید دوم اقساط فروش توافقی",
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "operationalExpenses": [
+    {
+      "id": 1,
+      "expenseCode": "EXP-1405-1001",
+      "categoryFa": "اجاره",
+      "titleFa": "اجاره فروردین‌ماه دفتر مرکزی و فروشگاه",
+      "amountIrr": 180000000,
+      "dateJalali": "1405/01/05",
+      "paymentMethod": "BANK_TRANSFER",
+      "sourceBankOrCash": "بانک سامان - شعبه جمهوری",
+      "notesFa": "واریز اجاره ماهانه بابت ملک مجتمع مهرگان",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "operationalIncomes": [
+    {
+      "id": 1,
+      "incomeCode": "INC-1405-1001",
+      "categoryFa": "خدمات مشاوره",
+      "titleFa": "درآمد مشاوره و طراحی اتاق سرور شرکت داده‌پردازان",
+      "amountIrr": 95000000,
+      "dateJalali": "1405/01/10",
+      "receiptMethod": "BANK_TRANSFER",
+      "targetBankOrCash": "بانک ملت - حساب جاری اصلی",
+      "notesFa": "درآمد متفرقه خدمات مشاوره و طراحی شبکه",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "accountsChart": [
+    {
+      "id": 1,
+      "code": "1",
+      "titleFa": "دارایی‌های جاری",
+      "level": "GROUP",
+      "parentCode": null,
+      "nature": "DEBIT",
+      "groupCode": "1",
+      "groupTitleFa": "دارایی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "code": "101",
+      "titleFa": "موجودی نقد و بانک",
+      "level": "GENERAL",
+      "parentCode": "1",
+      "nature": "DEBIT",
+      "groupCode": "1",
+      "groupTitleFa": "دارایی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 3,
+      "code": "10101",
+      "titleFa": "صندوق‌های فروشگاه و دفتر مرکزی",
+      "level": "SUBSIDIARY",
+      "parentCode": "101",
+      "nature": "DEBIT",
+      "groupCode": "1",
+      "groupTitleFa": "دارایی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 4,
+      "code": "10102",
+      "titleFa": "حساب‌های جاری بانکی",
+      "level": "SUBSIDIARY",
+      "parentCode": "101",
+      "nature": "DEBIT",
+      "groupCode": "1",
+      "groupTitleFa": "دارایی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 5,
+      "code": "10103",
+      "titleFa": "پایانه‌های فروش و دستگاه‌های کارتخوان (POS)",
+      "level": "SUBSIDIARY",
+      "parentCode": "101",
+      "nature": "DEBIT",
+      "groupCode": "1",
+      "groupTitleFa": "دارایی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 6,
+      "code": "102",
+      "titleFa": "اسناد دریافتنی تجاری (چک‌ها)",
+      "level": "GENERAL",
+      "parentCode": "1",
+      "nature": "DEBIT",
+      "groupCode": "1",
+      "groupTitleFa": "دارایی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 7,
+      "code": "10201",
+      "titleFa": "اسناد دریافتنی نزد صندوق (چک‌های سررسید نشده)",
+      "level": "SUBSIDIARY",
+      "parentCode": "102",
+      "nature": "DEBIT",
+      "groupCode": "1",
+      "groupTitleFa": "دارایی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 8,
+      "code": "10202",
+      "titleFa": "اسناد دریافتنی در جریان وصول به بانک",
+      "level": "SUBSIDIARY",
+      "parentCode": "102",
+      "nature": "DEBIT",
+      "groupCode": "1",
+      "groupTitleFa": "دارایی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 9,
+      "code": "10203",
+      "titleFa": "اسناد دریافتنی واخواست‌شده / برگشتی",
+      "level": "SUBSIDIARY",
+      "parentCode": "102",
+      "nature": "DEBIT",
+      "groupCode": "1",
+      "groupTitleFa": "دارایی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 10,
+      "code": "103",
+      "titleFa": "حساب‌های دریافتنی تجاری (مشتریان)",
+      "level": "GENERAL",
+      "parentCode": "1",
+      "nature": "DEBIT",
+      "groupCode": "1",
+      "groupTitleFa": "دارایی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 11,
+      "code": "10301",
+      "titleFa": "بدهکاران تجاری - خریداران حقیقی و پروژه‌ای",
+      "level": "SUBSIDIARY",
+      "parentCode": "103",
+      "nature": "DEBIT",
+      "groupCode": "1",
+      "groupTitleFa": "دارایی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 12,
+      "code": "104",
+      "titleFa": "موجودی کالا و قطعات",
+      "level": "GENERAL",
+      "parentCode": "1",
+      "nature": "DEBIT",
+      "groupCode": "1",
+      "groupTitleFa": "دارایی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 13,
+      "code": "10401",
+      "titleFa": "موجودی انبار مرکزی و فروشگاه (دوربین مداربسته و ملزومات)",
+      "level": "SUBSIDIARY",
+      "parentCode": "104",
+      "nature": "DEBIT",
+      "groupCode": "1",
+      "groupTitleFa": "دارایی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 14,
+      "code": "2",
+      "titleFa": "دارایی‌های غیرجاری",
+      "level": "GROUP",
+      "parentCode": null,
+      "nature": "DEBIT",
+      "groupCode": "2",
+      "groupTitleFa": "دارایی‌های غیرجاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 15,
+      "code": "201",
+      "titleFa": "دارایی‌های ثابت مشهود",
+      "level": "GENERAL",
+      "parentCode": "2",
+      "nature": "DEBIT",
+      "groupCode": "2",
+      "groupTitleFa": "دارایی‌های غیرجاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 16,
+      "code": "20101",
+      "titleFa": "اثاثه، ابزارآلات و تجهیزات فنی نصب",
+      "level": "SUBSIDIARY",
+      "parentCode": "201",
+      "nature": "DEBIT",
+      "groupCode": "2",
+      "groupTitleFa": "دارایی‌های غیرجاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 17,
+      "code": "3",
+      "titleFa": "بدهی‌های جاری",
+      "level": "GROUP",
+      "parentCode": null,
+      "nature": "CREDIT",
+      "groupCode": "3",
+      "groupTitleFa": "بدهی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 18,
+      "code": "301",
+      "titleFa": "حساب‌های پرداختنی تجاری (تأمین‌کنندگان و پیمانکاران)",
+      "level": "GENERAL",
+      "parentCode": "3",
+      "nature": "CREDIT",
+      "groupCode": "3",
+      "groupTitleFa": "بدهی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 19,
+      "code": "30101",
+      "titleFa": "بستانکاران تجاری - تأمین‌کنندگان و واردکنندگان کالا",
+      "level": "SUBSIDIARY",
+      "parentCode": "301",
+      "nature": "CREDIT",
+      "groupCode": "3",
+      "groupTitleFa": "بدهی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 20,
+      "code": "30102",
+      "titleFa": "بستانکاران خدماتی - نصابان و تکنسین‌های فنی",
+      "level": "SUBSIDIARY",
+      "parentCode": "301",
+      "nature": "CREDIT",
+      "groupCode": "3",
+      "groupTitleFa": "بدهی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 21,
+      "code": "302",
+      "titleFa": "اسناد پرداختنی تجاری (چک‌های صادره)",
+      "level": "GENERAL",
+      "parentCode": "3",
+      "nature": "CREDIT",
+      "groupCode": "3",
+      "groupTitleFa": "بدهی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 22,
+      "code": "30201",
+      "titleFa": "اسناد پرداختنی سررسید نشده به تأمین‌کنندگان",
+      "level": "SUBSIDIARY",
+      "parentCode": "302",
+      "nature": "CREDIT",
+      "groupCode": "3",
+      "groupTitleFa": "بدهی‌های جاری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 23,
+      "code": "5",
+      "titleFa": "حقوق صاحبان سرمایه",
+      "level": "GROUP",
+      "parentCode": null,
+      "nature": "CREDIT",
+      "groupCode": "5",
+      "groupTitleFa": "حقوق صاحبان سرمایه",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 24,
+      "code": "501",
+      "titleFa": "سرمایه اولیه و اندوخته‌ها",
+      "level": "GENERAL",
+      "parentCode": "5",
+      "nature": "CREDIT",
+      "groupCode": "5",
+      "groupTitleFa": "حقوق صاحبان سرمایه",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 25,
+      "code": "50101",
+      "titleFa": "سرمایه اولیه ثبت‌شده مؤسس",
+      "level": "SUBSIDIARY",
+      "parentCode": "501",
+      "nature": "CREDIT",
+      "groupCode": "5",
+      "groupTitleFa": "حقوق صاحبان سرمایه",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 26,
+      "code": "6",
+      "titleFa": "درآمدها و فروش",
+      "level": "GROUP",
+      "parentCode": null,
+      "nature": "CREDIT",
+      "groupCode": "6",
+      "groupTitleFa": "درآمدها و فروش",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 27,
+      "code": "601",
+      "titleFa": "فروش ناخالص کالا و تجهیزات امنیتی",
+      "level": "GENERAL",
+      "parentCode": "6",
+      "nature": "CREDIT",
+      "groupCode": "6",
+      "groupTitleFa": "درآمدها و فروش",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 28,
+      "code": "60101",
+      "titleFa": "درآمد فروش دوربین‌های مداربسته، دستگاه‌های ضبط و تجهیزات",
+      "level": "SUBSIDIARY",
+      "parentCode": "601",
+      "nature": "CREDIT",
+      "groupCode": "6",
+      "groupTitleFa": "درآمدها و فروش",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 29,
+      "code": "602",
+      "titleFa": "درآمد ارائه خدمات و پروژه‌ها",
+      "level": "GENERAL",
+      "parentCode": "6",
+      "nature": "CREDIT",
+      "groupCode": "6",
+      "groupTitleFa": "درآمدها و فروش",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 30,
+      "code": "60201",
+      "titleFa": "درآمد خدمات نصب، راه‌اندازی و پشتیبانی",
+      "level": "SUBSIDIARY",
+      "parentCode": "602",
+      "nature": "CREDIT",
+      "groupCode": "6",
+      "groupTitleFa": "درآمدها و فروش",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 31,
+      "code": "7",
+      "titleFa": "بهای تمام‌شده",
+      "level": "GROUP",
+      "parentCode": null,
+      "nature": "DEBIT",
+      "groupCode": "7",
+      "groupTitleFa": "بهای تمام‌شده",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 32,
+      "code": "701",
+      "titleFa": "بهای تمام‌شده کالای فروش‌رفته (COGS)",
+      "level": "GENERAL",
+      "parentCode": "7",
+      "nature": "DEBIT",
+      "groupCode": "7",
+      "groupTitleFa": "بهای تمام‌شده",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 33,
+      "code": "70101",
+      "titleFa": "بهای تمام‌شده اقلام خارج‌شده از انبار",
+      "level": "SUBSIDIARY",
+      "parentCode": "701",
+      "nature": "DEBIT",
+      "groupCode": "7",
+      "groupTitleFa": "بهای تمام‌شده",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 34,
+      "code": "702",
+      "titleFa": "بهای تمام‌شده خدمات پروژه‌های نصب",
+      "level": "GENERAL",
+      "parentCode": "7",
+      "nature": "DEBIT",
+      "groupCode": "7",
+      "groupTitleFa": "بهای تمام‌شده",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 35,
+      "code": "70201",
+      "titleFa": "اجرت پرداختی به نصابان و تکنسین‌های فنی",
+      "level": "SUBSIDIARY",
+      "parentCode": "702",
+      "nature": "DEBIT",
+      "groupCode": "7",
+      "groupTitleFa": "بهای تمام‌شده",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 36,
+      "code": "8",
+      "titleFa": "هزینه‌های عملیاتی و اداری",
+      "level": "GROUP",
+      "parentCode": null,
+      "nature": "DEBIT",
+      "groupCode": "8",
+      "groupTitleFa": "هزینه‌های عملیاتی و اداری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 37,
+      "code": "801",
+      "titleFa": "هزینه‌های عمومی و اداری",
+      "level": "GENERAL",
+      "parentCode": "8",
+      "nature": "DEBIT",
+      "groupCode": "8",
+      "groupTitleFa": "هزینه‌های عملیاتی و اداری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 38,
+      "code": "80101",
+      "titleFa": "هزینه اجاره محل فروشگاه و انبار",
+      "level": "SUBSIDIARY",
+      "parentCode": "801",
+      "nature": "DEBIT",
+      "groupCode": "8",
+      "groupTitleFa": "هزینه‌های عملیاتی و اداری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 39,
+      "code": "80102",
+      "titleFa": "هزینه آب، برق، گاز، تلفن و اینترنت",
+      "level": "SUBSIDIARY",
+      "parentCode": "801",
+      "nature": "DEBIT",
+      "groupCode": "8",
+      "groupTitleFa": "هزینه‌های عملیاتی و اداری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 40,
+      "code": "80103",
+      "titleFa": "هزینه حقوق، دستمزد و مزایای پرسنل",
+      "level": "SUBSIDIARY",
+      "parentCode": "801",
+      "nature": "DEBIT",
+      "groupCode": "8",
+      "groupTitleFa": "هزینه‌های عملیاتی و اداری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 41,
+      "code": "80104",
+      "titleFa": "هزینه حمل و نقل، ارسال و پیک",
+      "level": "SUBSIDIARY",
+      "parentCode": "801",
+      "nature": "DEBIT",
+      "groupCode": "8",
+      "groupTitleFa": "هزینه‌های عملیاتی و اداری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 42,
+      "code": "80105",
+      "titleFa": "هزینه ملزومات، لوازم مصرفی و استهلاک ابزار",
+      "level": "SUBSIDIARY",
+      "parentCode": "801",
+      "nature": "DEBIT",
+      "groupCode": "8",
+      "groupTitleFa": "هزینه‌های عملیاتی و اداری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 43,
+      "code": "80106",
+      "titleFa": "سایر هزینه‌های متفرقه عملیاتی",
+      "level": "SUBSIDIARY",
+      "parentCode": "801",
+      "nature": "DEBIT",
+      "groupCode": "8",
+      "groupTitleFa": "هزینه‌های عملیاتی و اداری",
+      "isSystem": true,
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "accountingDocuments": [
+    {
+      "id": 1,
+      "docNumber": "DOC-1405-0001",
+      "referenceNumber": "REF-OPEN-1405",
+      "dateJalali": "1405/01/01",
+      "dateIso": "2026-10-15T08:18:53.072Z",
+      "docType": "MANUAL",
+      "sourceDocType": "MANUAL",
+      "sourceDocId": "OPENING",
+      "descriptionFa": "سند افتتاحیه سال مالی ۱۴۰۵ - تراز آغازین دوره موجودی نقد، انبار و سرمایه",
+      "status": "PERMANENT",
+      "totalDebitIrr": 1450000000,
+      "totalCreditIrr": 1450000000,
+      "lines": [
+        {
+          "id": 1,
+          "rowNumber": 1,
+          "accountCode": "10101",
+          "accountTitleFa": "صندوق‌های فروشگاه و دفتر مرکزی",
+          "detailType": "CASH_BOX",
+          "detailId": 1,
+          "detailTitleFa": "صندوق اصلی فروشگاه",
+          "debitIrr": 150000000,
+          "creditIrr": 0,
+          "descriptionFa": "موجودی نقد اول دوره صندوق اصلی"
+        },
+        {
+          "id": 2,
+          "rowNumber": 2,
+          "accountCode": "10102",
+          "accountTitleFa": "حساب‌های جاری بانکی",
+          "detailType": "BANK_ACCOUNT",
+          "detailId": 1,
+          "detailTitleFa": "بانک ملت - شعبه مرکزی حافظ",
+          "debitIrr": 450000000,
+          "creditIrr": 0,
+          "descriptionFa": "موجودی اول دوره حساب جاری بانک ملت"
+        },
+        {
+          "id": 3,
+          "rowNumber": 3,
+          "accountCode": "10401",
+          "accountTitleFa": "موجودی انبار مرکزی و فروشگاه",
+          "detailType": null,
+          "detailId": null,
+          "detailTitleFa": null,
+          "debitIrr": 850000000,
+          "creditIrr": 0,
+          "descriptionFa": "ارزش ارزیابی انبار تجهیزات دوربین اول دوره"
+        },
+        {
+          "id": 4,
+          "rowNumber": 4,
+          "accountCode": "50101",
+          "accountTitleFa": "سرمایه اولیه ثبت‌شده مؤسس",
+          "detailType": null,
+          "detailId": null,
+          "detailTitleFa": null,
+          "debitIrr": 0,
+          "creditIrr": 1450000000,
+          "descriptionFa": "ثبت سرمایه آورده اولیه موسسین مهرگان"
+        }
+      ],
+      "createdByUserId": 1,
+      "createdByName": "مدیر ارشد مهرگان",
+      "approvedByUserId": 1,
+      "approvedByName": "مدیر ارشد مهرگان",
+      "permanentByUserId": 1,
+      "permanentByName": "مدیر ارشد مهرگان",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "fiscalYears": [
+    {
+      "id": 1,
+      "yearCode": "1404",
+      "titleFa": "سال مالی ۱۴۰۴ (بسته‌شده)",
+      "startDateJalali": "1404/01/01",
+      "endDateJalali": "1404/12/29",
+      "status": "CLOSED",
+      "isDefault": false,
+      "closingDocId": null,
+      "closingDocNumber": "DOC-1404-CLOSE-FINAL",
+      "closedAt": "2025-03-20T18:30:00.000Z",
+      "closedByUserId": 1,
+      "closedByNameFa": "مدیر ارشد مهرگان",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "yearCode": "1405",
+      "titleFa": "سال مالی ۱۴۰۵ (جاری)",
+      "startDateJalali": "1405/01/01",
+      "endDateJalali": "1405/12/29",
+      "status": "OPEN",
+      "isDefault": true,
+      "closingDocId": null,
+      "closingDocNumber": null,
+      "closedAt": null,
+      "closedByUserId": null,
+      "closedByNameFa": null,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "accountingPeriods": [
+    {
+      "id": 1,
+      "fiscalYearId": 2,
+      "fiscalYearCode": "1405",
+      "periodNumber": 1,
+      "titleFa": "فروردین‌ماه ۱۴۰۵",
+      "startDateJalali": "1405/01/01",
+      "endDateJalali": "1405/01/31",
+      "status": "OPEN",
+      "closedAt": null,
+      "closedByUserId": null,
+      "closingDocId": null,
+      "closingDocNumber": null
+    },
+    {
+      "id": 2,
+      "fiscalYearId": 2,
+      "fiscalYearCode": "1405",
+      "periodNumber": 2,
+      "titleFa": "اردیبهشت‌ماه ۱۴۰۵",
+      "startDateJalali": "1405/02/01",
+      "endDateJalali": "1405/02/31",
+      "status": "OPEN",
+      "closedAt": null,
+      "closedByUserId": null,
+      "closingDocId": null,
+      "closingDocNumber": null
+    },
+    {
+      "id": 3,
+      "fiscalYearId": 2,
+      "fiscalYearCode": "1405",
+      "periodNumber": 3,
+      "titleFa": "خردادماه ۱۴۰۵",
+      "startDateJalali": "1405/03/01",
+      "endDateJalali": "1405/03/31",
+      "status": "OPEN",
+      "closedAt": null,
+      "closedByUserId": null,
+      "closingDocId": null,
+      "closingDocNumber": null
+    },
+    {
+      "id": 4,
+      "fiscalYearId": 2,
+      "fiscalYearCode": "1405",
+      "periodNumber": 4,
+      "titleFa": "تیرماه ۱۴۰۵",
+      "startDateJalali": "1405/04/01",
+      "endDateJalali": "1405/04/31",
+      "status": "OPEN",
+      "closedAt": null,
+      "closedByUserId": null,
+      "closingDocId": null,
+      "closingDocNumber": null
+    },
+    {
+      "id": 5,
+      "fiscalYearId": 2,
+      "fiscalYearCode": "1405",
+      "periodNumber": 5,
+      "titleFa": "مردادماه ۱۴۰۵",
+      "startDateJalali": "1405/05/01",
+      "endDateJalali": "1405/05/31",
+      "status": "OPEN",
+      "closedAt": null,
+      "closedByUserId": null,
+      "closingDocId": null,
+      "closingDocNumber": null
+    },
+    {
+      "id": 6,
+      "fiscalYearId": 2,
+      "fiscalYearCode": "1405",
+      "periodNumber": 6,
+      "titleFa": "شهریورماه ۱۴۰۵",
+      "startDateJalali": "1405/06/01",
+      "endDateJalali": "1405/06/31",
+      "status": "OPEN",
+      "closedAt": null,
+      "closedByUserId": null,
+      "closingDocId": null,
+      "closingDocNumber": null
+    },
+    {
+      "id": 7,
+      "fiscalYearId": 2,
+      "fiscalYearCode": "1405",
+      "periodNumber": 7,
+      "titleFa": "مهرماه ۱۴۰۵",
+      "startDateJalali": "1405/07/01",
+      "endDateJalali": "1405/07/30",
+      "status": "OPEN",
+      "closedAt": null,
+      "closedByUserId": null,
+      "closingDocId": null,
+      "closingDocNumber": null
+    },
+    {
+      "id": 8,
+      "fiscalYearId": 2,
+      "fiscalYearCode": "1405",
+      "periodNumber": 8,
+      "titleFa": "آبان‌ماه ۱۴۰۵",
+      "startDateJalali": "1405/08/01",
+      "endDateJalali": "1405/08/30",
+      "status": "OPEN",
+      "closedAt": null,
+      "closedByUserId": null,
+      "closingDocId": null,
+      "closingDocNumber": null
+    },
+    {
+      "id": 9,
+      "fiscalYearId": 2,
+      "fiscalYearCode": "1405",
+      "periodNumber": 9,
+      "titleFa": "آذرماه ۱۴۰۵",
+      "startDateJalali": "1405/09/01",
+      "endDateJalali": "1405/09/30",
+      "status": "OPEN",
+      "closedAt": null,
+      "closedByUserId": null,
+      "closingDocId": null,
+      "closingDocNumber": null
+    },
+    {
+      "id": 10,
+      "fiscalYearId": 2,
+      "fiscalYearCode": "1405",
+      "periodNumber": 10,
+      "titleFa": "دی‌ماه ۱۴۰۵",
+      "startDateJalali": "1405/10/01",
+      "endDateJalali": "1405/10/30",
+      "status": "OPEN",
+      "closedAt": null,
+      "closedByUserId": null,
+      "closingDocId": null,
+      "closingDocNumber": null
+    },
+    {
+      "id": 11,
+      "fiscalYearId": 2,
+      "fiscalYearCode": "1405",
+      "periodNumber": 11,
+      "titleFa": "بهمن‌ماه ۱۴۰۵",
+      "startDateJalali": "1405/11/01",
+      "endDateJalali": "1405/11/30",
+      "status": "OPEN",
+      "closedAt": null,
+      "closedByUserId": null,
+      "closingDocId": null,
+      "closingDocNumber": null
+    },
+    {
+      "id": 12,
+      "fiscalYearId": 2,
+      "fiscalYearCode": "1405",
+      "periodNumber": 12,
+      "titleFa": "اسفندماه ۱۴۰۵",
+      "startDateJalali": "1405/12/01",
+      "endDateJalali": "1405/12/29",
+      "status": "OPEN",
+      "closedAt": null,
+      "closedByUserId": null,
+      "closingDocId": null,
+      "closingDocNumber": null
+    }
+  ],
+  "costCenters": [
+    {
+      "id": 1,
+      "code": "CC-101",
+      "titleFa": "فروشگاه مرکزی و شوروم تخصصی دوربین",
+      "managerNameFa": "مهندس حسینی",
+      "budgetIrr": 5000000000,
+      "isActive": true,
+      "descriptionFa": "واحد فروش حضوری، آنلاین و ارتباط با مشتریان خرد و همکار",
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "code": "CC-102",
+      "titleFa": "پروژه‌ها و خدمات نصب و اجرا CCTV",
+      "managerNameFa": "مهندس اکبری",
+      "budgetIrr": 8000000000,
+      "isActive": true,
+      "descriptionFa": "تیم‌های اجرایی نصب مداربسته، کابل‌کشی، داکت‌کشی و راه‌اندازی رک و NVR",
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 3,
+      "code": "CC-103",
+      "titleFa": "تعمیرات تخصصی و گارانتی تجهیزات",
+      "managerNameFa": "مهندس رضایی",
+      "budgetIrr": 2500000000,
+      "isActive": true,
+      "descriptionFa": "مرکز خدمات پس از فروش، تست لنز، برد سنسور و منبع تغذیه",
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 4,
+      "code": "CC-104",
+      "titleFa": "عمومی، پشتیبانی و ستاد اداری",
+      "managerNameFa": "خانم احمدی",
+      "budgetIrr": 3000000000,
+      "isActive": true,
+      "descriptionFa": "هزینه‌های مشترک، اداری، مالی و حسابداری مجموعه",
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "projectCode": "PRJ-1405-101",
+      "titleFa": "پروژه نظارت تصویری و هوشمندسازی مجتمع تجاری نگین پایتخت",
+      "customerId": 1,
+      "customerTitleFa": "شرکت بازرگانی نگین پایتخت (سهامی خاص)",
+      "installerId": 3,
+      "installerTitleFa": "مهندس علیرضا بهرامی (نصاب ارشد)",
+      "salesInvoiceId": 1,
+      "invoiceNumber": "INV-1405-1001",
+      "costCenterId": 2,
+      "costCenterCode": "CC-102",
+      "status": "IN_PROGRESS",
+      "locationAddressFa": "تهران، خیابان ولیعصر، تقاطع طالقانی، مجتمع تجاری نگین پایتخت",
+      "startDateJalali": "1405/01/10",
+      "targetCompletionDateJalali": "1405/02/15",
+      "actualCompletionDateJalali": null,
+      "contractAmountIrr": 550000000,
+      "consumedMaterialsCostIrr": 285000000,
+      "installerLaborCostIrr": 45000000,
+      "allocatedExpensesIrr": 15000000,
+      "netProfitIrr": 205000000,
+      "netMarginPct": 37.27,
+      "notesFa": "اجرای کابل‌کشی Cat6، نصب ۸ دوربین دید در شب، سوییچ شبکه PoE و رک دیواری",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "projectCode": "PRJ-1405-102",
+      "titleFa": "پروژه حفاظت پیرامونی و دکل‌های نظارتی درمانگاه امید",
+      "customerId": 2,
+      "customerTitleFa": "درمانگاه شبانه‌روزی امید",
+      "installerId": 3,
+      "installerTitleFa": "مهندس علیرضا بهرامی (نصاب ارشد)",
+      "salesInvoiceId": null,
+      "invoiceNumber": null,
+      "costCenterId": 2,
+      "costCenterCode": "CC-102",
+      "status": "APPROVED",
+      "locationAddressFa": "تهران، بزرگراه ستاری، جنب درمانگاه شبانه‌روزی امید",
+      "startDateJalali": "1405/01/20",
+      "targetCompletionDateJalali": "1405/02/05",
+      "actualCompletionDateJalali": null,
+      "contractAmountIrr": 380000000,
+      "consumedMaterialsCostIrr": 190000000,
+      "installerLaborCostIrr": 35000000,
+      "allocatedExpensesIrr": 10000000,
+      "netProfitIrr": 145000000,
+      "netMarginPct": 38.16,
+      "notesFa": "تأیید شده، در مرحله تخصیص کالا و تحویل تجهیزات از انبار",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 3,
+      "projectCode": "PRJ-1405-103",
+      "titleFa": "تجهیز انبار مرکزی و سالن مونتاژ شرکت صنایع جهان‌گستر",
+      "customerId": 1,
+      "customerTitleFa": "شرکت بازرگانی نگین پایتخت (سهامی خاص)",
+      "installerId": 3,
+      "installerTitleFa": "مهندس علیرضا بهرامی (نصاب ارشد)",
+      "salesInvoiceId": 1,
+      "invoiceNumber": "INV-1405-1001",
+      "costCenterId": 2,
+      "costCenterCode": "CC-102",
+      "status": "COMPLETED",
+      "locationAddressFa": "شهرک صنعتی شمس‌آباد، بلوار بوستان، پلاک ۱۴",
+      "startDateJalali": "1404/11/15",
+      "targetCompletionDateJalali": "1404/12/20",
+      "actualCompletionDateJalali": "1404/12/18",
+      "contractAmountIrr": 820000000,
+      "consumedMaterialsCostIrr": 460000000,
+      "installerLaborCostIrr": 70000000,
+      "allocatedExpensesIrr": 25000000,
+      "netProfitIrr": 265000000,
+      "netMarginPct": 32.32,
+      "notesFa": "پروژه با موفقیت به پایان رسید و صورت‌جلسه تحویل قطعی امضا شد.",
+      "actorUserId": 1,
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "projectRequisitions": [
+    {
+      "id": 1,
+      "requestCode": "REQ-1405-101",
+      "projectId": 1,
+      "projectCode": "PRJ-1405-101",
+      "projectTitleFa": "پروژه نظارت تصویری و هوشمندسازی مجتمع تجاری نگین پایتخت",
+      "itemId": 1,
+      "itemCode": "CAM-IP-4MP-DOME",
+      "itemTitleFa": "دوربین مداربسته دام تحت شبکه ۴ مگاپیکسل دید در شب رنگی",
+      "sourceWarehouseId": 1,
+      "sourceWarehouseTitleFa": "انبار مرکزی تهران (شوروم)",
+      "requestedQty": 8,
+      "approvedQty": 8,
+      "issuedQty": 8,
+      "consumedQty": 6,
+      "returnedQty": 2,
+      "unitCostIrr": 25000000,
+      "totalCostIrr": 150000000,
+      "serials": [
+        "SN-DOME-001",
+        "SN-DOME-002"
+      ],
+      "status": "RETURNED",
+      "requestedByUserId": 1,
+      "requestedByNameFa": "مهندس علیرضا بهرامی",
+      "approvedByUserId": 1,
+      "approvedByNameFa": "مدیر ارشد مهرگان",
+      "issuedByUserId": 1,
+      "issuedByNameFa": "مسئول انبار مرکزی",
+      "consumedAtJalali": "1405/01/18",
+      "returnedAtJalali": "1405/01/22",
+      "notesFa": "۶ عدد در سقف راهروها نصب گردید و ۲ عدد مازاد به دلیل تغییر نقشه سالم به انبار برگشت داده شد.",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "requestCode": "REQ-1405-102",
+      "projectId": 1,
+      "projectCode": "PRJ-1405-101",
+      "projectTitleFa": "پروژه نظارت تصویری و هوشمندسازی مجتمع تجاری نگین پایتخت",
+      "itemId": 2,
+      "itemCode": "NVR-32CH-4K",
+      "itemTitleFa": "دستگاه ضبط ویدئویی تحت شبکه ۳۲ کانال 4K با دو پورت LAN",
+      "sourceWarehouseId": 1,
+      "sourceWarehouseTitleFa": "انبار مرکزی تهران (شوروم)",
+      "requestedQty": 1,
+      "approvedQty": 1,
+      "issuedQty": 1,
+      "consumedQty": 1,
+      "returnedQty": 0,
+      "unitCostIrr": 95000000,
+      "totalCostIrr": 95000000,
+      "serials": [
+        "SN-NVR-101"
+      ],
+      "status": "CONSUMED",
+      "requestedByUserId": 1,
+      "requestedByNameFa": "مهندس علیرضا بهرامی",
+      "approvedByUserId": 1,
+      "approvedByNameFa": "مدیر ارشد مهرگان",
+      "issuedByUserId": 1,
+      "issuedByNameFa": "مسئول انبار مرکزی",
+      "consumedAtJalali": "1405/01/16",
+      "returnedAtJalali": null,
+      "notesFa": "در رک اتاق مانیتورینگ نصب، کانفیگ و کابل‌کشی برق اضطراری متصل شد.",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 3,
+      "requestCode": "REQ-1405-103",
+      "projectId": 1,
+      "projectCode": "PRJ-1405-101",
+      "projectTitleFa": "پروژه نظارت تصویری و هوشمندسازی مجتمع تجاری نگین پایتخت",
+      "itemId": 3,
+      "itemCode": "CBL-CAT6-SFTP",
+      "itemTitleFa": "کابل شبکه Cat6 SFTP تمام مس قرقره ۳۰۵ متری ضد نویز",
+      "sourceWarehouseId": 1,
+      "sourceWarehouseTitleFa": "انبار مرکزی تهران (شوروم)",
+      "requestedQty": 2,
+      "approvedQty": 2,
+      "issuedQty": 2,
+      "consumedQty": 2,
+      "returnedQty": 0,
+      "unitCostIrr": 20000000,
+      "totalCostIrr": 40000000,
+      "status": "CONSUMED",
+      "requestedByUserId": 1,
+      "requestedByNameFa": "مهندس علیرضا بهرامی",
+      "approvedByUserId": 1,
+      "approvedByNameFa": "مدیر ارشد مهرگان",
+      "issuedByUserId": 1,
+      "issuedByNameFa": "مسئول انبار مرکزی",
+      "consumedAtJalali": "1405/01/14",
+      "returnedAtJalali": null,
+      "notesFa": "کابل‌کشی بین طبقات همکف و اول با داکت ۲.۵ انجام شد.",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 4,
+      "requestCode": "REQ-1405-104",
+      "projectId": 2,
+      "projectCode": "PRJ-1405-102",
+      "projectTitleFa": "پروژه حفاظت پیرامونی و دکل‌های نظارتی درمانگاه امید",
+      "itemId": 1,
+      "itemCode": "CAM-IP-4MP-DOME",
+      "itemTitleFa": "دوربین مداربسته دام تحت شبکه ۴ مگاپیکسل دید در شب رنگی",
+      "sourceWarehouseId": 1,
+      "sourceWarehouseTitleFa": "انبار مرکزی تهران (شوروم)",
+      "requestedQty": 4,
+      "approvedQty": 4,
+      "issuedQty": 0,
+      "consumedQty": 0,
+      "returnedQty": 0,
+      "unitCostIrr": 25000000,
+      "totalCostIrr": 0,
+      "status": "APPROVED",
+      "requestedByUserId": 1,
+      "requestedByNameFa": "مهندس علیرضا بهرامی",
+      "approvedByUserId": 1,
+      "approvedByNameFa": "مدیر ارشد مهرگان",
+      "issuedByUserId": null,
+      "issuedByNameFa": null,
+      "consumedAtJalali": null,
+      "returnedAtJalali": null,
+      "notesFa": "تأیید شده، در انتظار تحویل و خروج فیزیکی از انبار مرکزی",
+      "createdAt": "2026-10-15T08:18:53.072Z",
+      "updatedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "fixedAssets": [
+    {
+      "id": 1,
+      "assetCode": "AST-1405-001",
+      "titleFa": "سوییچینگ، سرور و رک‌های اتاق سرور مرکز داده مهرگان",
+      "purchaseDateJalali": "1404/02/10",
+      "purchaseCostIrr": 280000000,
+      "salvageValueIrr": 10000000,
+      "usefulLifeYears": 5,
+      "depreciationMethod": "STRAIGHT_LINE",
+      "status": "ACTIVE",
+      "custodianPartyId": 1,
+      "custodianTitleFa": "امیرحسین رضایی",
+      "locationAddressFa": "دفتر مرکزی - اتاق سرور",
+      "accumulatedDepreciationIrr": 54000000,
+      "bookValueIrr": 226000000,
+      "lastDepreciationDateJalali": "1404/12/29",
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    },
+    {
+      "id": 2,
+      "assetCode": "AST-1405-002",
+      "titleFa": "خودرو اختصاصی پشتیبانی و نصب میدانی (پراید وانت تخصصی)",
+      "purchaseDateJalali": "1403/06/15",
+      "purchaseCostIrr": 450000000,
+      "salvageValueIrr": 50000000,
+      "usefulLifeYears": 7,
+      "depreciationMethod": "STRAIGHT_LINE",
+      "status": "ACTIVE",
+      "custodianPartyId": 3,
+      "custodianTitleFa": "سعید محمدی",
+      "locationAddressFa": "ناوگان حمل و نقل و نصب",
+      "accumulatedDepreciationIrr": 114285714,
+      "bookValueIrr": 335714286,
+      "lastDepreciationDateJalali": "1404/12/29",
+      "createdAt": "2026-10-15T08:18:53.072Z"
+    }
+  ],
+  "depreciationEntries": [
+    {
+      "id": 1,
+      "assetId": 1,
+      "assetTitleFa": "سوییچینگ، سرور و رک‌های اتاق سرور مرکز داده مهرگان",
+      "periodJalali": "1404-Y",
+      "depreciationAmountIrr": 54000000,
+      "accountingDocId": 1,
+      "postedAt": "2026-10-15T08:18:53.072Z"
+    }
+  ]
+}

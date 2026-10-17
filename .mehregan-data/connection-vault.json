@@ -1,0 +1,27 @@
+{
+  "setupWizardCompleted": true,
+  "connectionStatus": "CONNECTED",
+  "activeProfile": {
+    "profileId": "prof-local-default",
+    "labelFa": "دیتابیس محلی روی همین کامپیوتر (Local PostgreSQL Engine)",
+    "mode": "LOCAL",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "database": "mehregan_erp_db",
+    "username": "postgres",
+    "encryptedPassword": {
+      "cipher": "aes-256-gcm",
+      "ivHex": "d69de18617e70e2e813e15a0",
+      "authTagHex": "f713276430110b9025e1294da4aba14b",
+      "ciphertextHex": "d1bd6e4a5b1ef5e40d79aeedcc581e113902a3c6"
+    },
+    "hasPasswordSaved": true,
+    "tlsEnabled": false,
+    "tlsMode": "disable",
+    "lastTestedAt": "2026-10-15T08:18:47.254Z",
+    "verifiedReady": true
+  },
+  "stagedCandidateProfile": null,
+  "previousProfileForRollback": null,
+  "lastConnectionSwitchAt": "2026-10-15T08:18:47.254Z"
+}

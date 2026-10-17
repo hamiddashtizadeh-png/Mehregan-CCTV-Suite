@@ -1,0 +1,8 @@
+{
+  "name": "Mehregan Business Accounting Suite",
+  "description": "Professional, secure, and multi-platform accounting software designed for central business management with flexible database connectivity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

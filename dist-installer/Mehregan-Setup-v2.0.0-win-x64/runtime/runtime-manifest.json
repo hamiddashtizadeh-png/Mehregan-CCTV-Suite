@@ -1,0 +1,12 @@
+{
+  "runtimeVersion": "Node.js 22 LTS / Portable Cross-Platform Bundle",
+  "architecture": "x64",
+  "bundledModules": [
+    "express",
+    "drizzle-orm",
+    "pg",
+    "dotenv"
+  ],
+  "standalonePolicy": "این بسته به نصب جداگانه Node.js روی سیستم مقصد وابسته نیست.",
+  "dataSafetyPolicy": "پوشه .mehregan-data در هنگام نصب یا ارتقا هرگز حذف یا بازنویسی نمی‌شود."
+}

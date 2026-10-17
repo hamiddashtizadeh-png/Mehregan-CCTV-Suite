@@ -1,0 +1,159 @@
+{
+  "product": "Mehregan Business Accounting Suite",
+  "version": "2.0.0",
+  "stage": "Stage 2: Setup & Deployment System",
+  "builtAt": "2026-10-17T14:20:51.264Z",
+  "targetPlatform": "Windows x64 / Linux x64 Standalone",
+  "launcherExecutable": "MehreganLauncher.bat / MehreganLauncher.sh",
+  "zeroNodeDependency": true,
+  "pathResolutionStrategy": "INSTALL_DIR_RELATIVE (path.dirname(import.meta.url))",
+  "totalFilesCount": 27,
+  "totalSizeBytes": 2743577,
+  "totalSizeFormatted": "2.62 MB",
+  "manifestSignature": "af753b0b45b30a83ede8e81a7cff51fbb35e52cce9e492f82e29d8c2e89139e6",
+  "criticalDirectories": {
+    "frontendBuild": "dist/",
+    "backendServer": "server.ts",
+    "migrations": "src/db/migrations/",
+    "bundledRuntime": "runtime/",
+    "launchers": "launcher/",
+    "dataVaultRule": "Preserved at .mehregan-data/"
+  },
+  "files": [
+    {
+      "path": ".env.example",
+      "size": 1215,
+      "sha256": "83774499475452199065f258253e14894cf93c0d261a6c491aef0fe22f49242b"
+    },
+    {
+      "path": "MehreganLauncher.bat",
+      "size": 1795,
+      "sha256": "380cb52d114abb3a5ff9815b3c3cdca122b562176bf1077626ec061e24e411c8"
+    },
+    {
+      "path": "MehreganLauncher.sh",
+      "size": 3195,
+      "sha256": "9fa07bfbef82f166b41ba8e52c588e8f8e4c0b7dc9445a680b14f5d8e6719cec"
+    },
+    {
+      "path": "README_FA.md",
+      "size": 3150,
+      "sha256": "e6008f88ac4f5345e868d75361efe4f53cf1ea15a6b0a176ca32a0095809d571"
+    },
+    {
+      "path": "START_MEHREGAN.bat",
+      "size": 4099,
+      "sha256": "1d117796724ba07b54055617f1d51f414f6a022c893d8096707c406cae81266f"
+    },
+    {
+      "path": "START_MEHREGAN.sh",
+      "size": 2845,
+      "sha256": "0b9a25bf512a5d0a69586bb6b66bf0a0aa236cf5e276b3f1763e6609c0e71dc4"
+    },
+    {
+      "path": "dist/assets/index-Cx1TzBBw.css",
+      "size": 96268,
+      "sha256": "fefbda8dba63d44c897831ad3fbd52a5504ad0f464e4e805ddda398a7cb5ff0b"
+    },
+    {
+      "path": "dist/assets/index-DUcDTQdl.js",
+      "size": 1979602,
+      "sha256": "539220db5748183c99ccb0939fc8d7231161903d8ab23b16dc0c285f8b98e813"
+    },
+    {
+      "path": "dist/index.html",
+      "size": 1900,
+      "sha256": "d02f57e4c31dda222fcc638d14c62ba754c9735d5fd37fae38edefd6a79b9c5f"
+    },
+    {
+      "path": "launcher/mehregan-launcher.bat",
+      "size": 1795,
+      "sha256": "380cb52d114abb3a5ff9815b3c3cdca122b562176bf1077626ec061e24e411c8"
+    },
+    {
+      "path": "launcher/mehregan-launcher.sh",
+      "size": 3195,
+      "sha256": "9fa07bfbef82f166b41ba8e52c588e8f8e4c0b7dc9445a680b14f5d8e6719cec"
+    },
+    {
+      "path": "package.json",
+      "size": 1394,
+      "sha256": "4fe7b66c58d6647e5ae142018975d9f9d83a42ef8615e45b41772cff17f5f59c"
+    },
+    {
+      "path": "runtime/node",
+      "size": 244,
+      "sha256": "f4b0be7496931cfb00a4ebb1ae5aa46db06d288a58c0a5c67f9dd278f79ab2a6"
+    },
+    {
+      "path": "runtime/runtime-manifest.json",
+      "size": 451,
+      "sha256": "07b7e5a8f0ff2b878818db49a343a683a6bd0a388151d6052412a6fe181d2715"
+    },
+    {
+      "path": "server.ts",
+      "size": 131264,
+      "sha256": "0880005b6e06a4fdb16b1110221068c784f03b3119375568ef2dc280ab906282"
+    },
+    {
+      "path": "src/db/migrations/0001_foundation_core.sql",
+      "size": 2597,
+      "sha256": "cc742bc2d1f9cc2a8e3b06ce0e0443b5ea947fc318119a5d761000c75f5ef1a1"
+    },
+    {
+      "path": "src/db/migrations/0002_rbac_and_audit.sql",
+      "size": 2943,
+      "sha256": "d99f240622fb66a5d7fa051c522d0f3022b57de4a10a91d98662249e402b51f5"
+    },
+    {
+      "path": "src/db/migrations/0003_parties_module.sql",
+      "size": 2021,
+      "sha256": "904f8c9a2513ff419cb229882f832ccba4e14c3795c122148cdbc3e194a39b6b"
+    },
+    {
+      "path": "src/db/migrations/0004_inventory_and_kardex_module.sql",
+      "size": 4114,
+      "sha256": "51b95b6b4f2cfa4e9ed725d4577530f63ee9ddbefb82b2a68d32af942d96aedf"
+    },
+    {
+      "path": "src/db/migrations/0005_purchases_and_landed_cost.sql",
+      "size": 5138,
+      "sha256": "efc7e0f6a81705d6a0a0af6c4df7b49954751ff7d2d399f13ae47c27714a7537"
+    },
+    {
+      "path": "src/db/migrations/0006_sales_and_quick_pos.sql",
+      "size": 3927,
+      "sha256": "dcc4452a49c9e26082f2f552720770056e3c8643588c4266e02ba0e4d849d928"
+    },
+    {
+      "path": "src/db/migrations/0007_installation_services.sql",
+      "size": 1168,
+      "sha256": "8dc6274ffe85da9098f30058aee78a2f394b74f21c8c34bb91a9cbb53a099bf8"
+    },
+    {
+      "path": "src/db/migrations/0008_treasury_and_cash_flow.sql",
+      "size": 3695,
+      "sha256": "48426917b452d9af8d5efb83111f5193bde1d9018e045aab34790204ea97a174"
+    },
+    {
+      "path": "src/server/cryptoVault.ts",
+      "size": 2823,
+      "sha256": "40c1b31cb28d29d667c5ef56791bff888100c8fdff82bb2290ba1519535b44b4"
+    },
+    {
+      "path": "src/server/foundationStore.ts",
+      "size": 473300,
+      "sha256": "1cd9b6fddaf85d0c138f4354fc85db4a8aed576d30e9a17973eddd19830804e9"
+    },
+    {
+      "path": "src/server/paths.ts",
+      "size": 2490,
+      "sha256": "43d6dc797cac3838121cd137e00c3f143d407e61f73e15798b3307fedd0b631b"
+    },
+    {
+      "path": "راهنمای_جامع_اجرا_در_هر_سیستم.txt",
+      "size": 6949,
+      "sha256": "434cdf0ceb77ae9fd9cc047b62b2ed0ed0bb7e6be225725c3f2f49c3cc21b1c1"
+    }
+  ]
+}

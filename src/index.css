@@ -1,0 +1,332 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: 'Vazirmatn', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    font-family: 'Vazirmatn', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    direction: rtl;
+    text-align: right;
+  }
+
+  code,
+  pre,
+  .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Persian Beautiful Typography: Titr and Zar */
+.font-titr {
+  font-family: 'B Titr', 'BTitr', 'Titr', 'Vazirmatn', Tahoma, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.font-zar {
+  font-family: 'B Zar', 'BZar', 'Zar', 'Vazirmatn', Georgia, serif;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Dashboard Animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-3px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.85; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+@keyframes shimmerGlow {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes dashOffset {
+  0% { stroke-dashoffset: 100; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.06) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmerGlow 3.5s infinite;
+}
+
+.animate-dash {
+  stroke-dasharray: 100;
+  animation: dashOffset 1.5s ease-out forwards;
+}
+
+/* Mehregan Print Engine */
+#mehregan-print-mount {
+  display: none;
+}
+
+body.mehregan-printing {
+  overflow: hidden !important;
+}
+
+body.mehregan-printing #root {
+  display: none !important;
+}
+
+body.mehregan-printing #mehregan-print-mount {
+  display: flex !important;
+  flex-direction: column !important;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 999999 !important;
+  background-color: #0f172a !important;
+  overflow-y: auto !important;
+  color: #0f172a !important;
+}
+
+.mehregan-print-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000000;
+  background: #1e293b;
+  color: #ffffff;
+  padding: 10px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #334155;
+  direction: rtl;
+}
+
+.print-topbar-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.print-badge {
+  background: #059669;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.print-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f1f5f9;
+}
+
+.print-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.print-btn-primary {
+  background: #10b981;
+  color: #ffffff;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.15s;
+}
+.print-btn-primary:hover {
+  background: #059669;
+}
+
+.print-btn-secondary {
+  background: #334155;
+  color: #e2e8f0;
+  border: 1px solid #475569;
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.print-btn-secondary:hover {
+  background: #475569;
+  color: #ffffff;
+}
+
+.print-btn-close {
+  background: #e11d48;
+  color: #ffffff;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.print-btn-close:hover {
+  background: #be123c;
+}
+
+.mehregan-print-viewport {
+  flex: 1;
+  padding: 24px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #0f172a;
+}
+
+.printable-sheet {
+  background: #ffffff;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  padding: 24px;
+  margin: 0 auto;
+  color: #0f172a;
+  direction: rtl;
+  width: 100%;
+}
+
+.printable-sheet.is-a4 {
+  max-width: 210mm;
+  min-height: 297mm;
+}
+
+.printable-sheet.is-thermal {
+  max-width: 80mm;
+}
+
+@media print {
+  html,
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    min-height: 100% !important;
+    overflow: visible !important;
+  }
+
+  body.mehregan-printing {
+    overflow: visible !important;
+  }
+
+  body.mehregan-printing #root {
+    display: none !important;
+  }
+
+  body.mehregan-printing #mehregan-print-mount {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    overflow: visible !important;
+    inset: auto !important;
+  }
+
+  .mehregan-print-topbar,
+  .no-print,
+  button,
+  nav,
+  header,
+  aside,
+  footer {
+    display: none !important;
+  }
+
+  .mehregan-print-viewport {
+    padding: 0 !important;
+    background: transparent !important;
+    display: block !important;
+  }
+
+  .printable-sheet {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 2mm !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+  }
+
+  /* Reset modal containers when direct browser Ctrl+P is triggered */
+  .fixed,
+  .fixed.inset-0,
+  div[class*="backdrop-blur"],
+  div[class*="overflow-y-auto"],
+  div[class*="max-h-"] {
+    position: static !important;
+    max-height: none !important;
+    overflow: visible !important;
+    background: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    inset: auto !important;
+    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+  }
+
+  .printable-area {
+    visibility: visible !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 2mm !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: none !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+  }
+
+  .printable-area * {
+    visibility: visible !important;
+  }
+
+  /* Ensure crisp high-contrast print borders */
+  table,
+  th,
+  td,
+  .printable-area table,
+  .printable-area th,
+  .printable-area td {
+    border-color: #334155 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  @page {
+    size: auto;
+    margin: 6mm;
+  }
+}
